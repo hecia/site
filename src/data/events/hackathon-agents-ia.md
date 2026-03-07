@@ -1,8 +1,8 @@
 ---
 title: "Hackathon Agents IA"
 description: "48h pour construire un agent IA fonctionnel. Ouvert a tous les etudiants HEC, debutants comme confirmes. Prix, mentors et surprises au rendez-vous."
-startDate: 2026-04-12T09:00:00
-endDate: 2026-04-14T18:00:00
+startDate: 2026-03-11T17:00:00
+endDate: 2026-03-11T23:00:00
 location: "Campus HEC Paris, Jouy-en-Josas"
 online: false
 registrationUrl: "https://forms.gle/example-hackathon"
