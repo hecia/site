@@ -15,6 +15,7 @@ const links = [
   { href: "/projects", label: "Projets" },
   { href: "/blog", label: "Blog" },
   { href: "/news", label: "Actualités" },
+  { href: "/gallery", label: "Galerie" },
 ]
 
 export function MobileNav() {
@@ -32,12 +33,12 @@ export function MobileNav() {
         <SheetHeader>
           <SheetTitle className="text-left">Menu</SheetTitle>
         </SheetHeader>
-        <nav className="flex flex-col gap-4 mt-8">
+        <nav className="mt-8 flex flex-col gap-4 px-4">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-lg font-medium hover:text-primary transition-colors"
+              className="text-lg font-medium transition-colors hover:text-primary"
               onClick={() => setOpen(false)}
             >
               {link.label}

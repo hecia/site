@@ -1,6 +1,6 @@
-import { defineCollection } from "astro:content";
-import { glob } from "astro/loaders";
-import { z } from "astro/zod";
+import { defineCollection } from "astro:content"
+import { glob } from "astro/loaders"
+import { z } from "astro/zod"
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/blog" }),
@@ -19,7 +19,7 @@ const blog = defineCollection({
       .optional(),
     draft: z.boolean().default(false),
   }),
-});
+})
 
 const events = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/events" }),
@@ -41,7 +41,7 @@ const events = defineCollection({
       .optional(),
     draft: z.boolean().default(false),
   }),
-});
+})
 
 const projects = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/projects" }),
@@ -63,7 +63,7 @@ const projects = defineCollection({
       })
       .optional(),
   }),
-});
+})
 
 const news = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/news" }),
@@ -77,6 +77,22 @@ const news = defineCollection({
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
   }),
-});
+})
 
-export const collections = { blog, events, projects, news };
+const gallery = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/data/gallery" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    date: z.coerce.date(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    category: z
+      .enum(["événements", "projets", "vie-associative", "autre"])
+      .default("autre"),
+  }),
+})
+
+export const collections = { blog, events, projects, news, gallery }
