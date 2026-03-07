@@ -1,0 +1,57 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '@/layouts/main.astro';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+
+export async function getStaticPaths() {
+  const eventEntries = await getCollection('events');
+  return eventEntries.map(entry => ({
+    params: { slug: entry.id }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={`${entry.data.title} | Événements HEC IA`} description={entry.data.description}>
+  <article class="container mx-auto px-4 md:px-8 py-12 md:py-20 max-w-4xl">
+    <div class="mb-12">
+      <div class="flex flex-wrap items-center gap-4 mb-6">
+        <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 text-sm py-1 px-3">
+          {entry.data.startDate.toLocaleDateString('fr-CA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+        </Badge>
+        {entry.data.online && <Badge variant="outline" className="text-sm py-1 px-3">En ligne</Badge>}
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">{entry.data.title}</h1>
+      
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 text-muted-foreground mb-8">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>{entry.data.location}</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>
+            {entry.data.startDate.toLocaleTimeString('fr-CA', { hour: '2-digit', minute: '2-digit' })}
+            {entry.data.endDate && ` - ${entry.data.endDate.toLocaleTimeString('fr-CA', { hour: '2-digit', minute: '2-digit' })}`}
+          </span>
+        </div>
+      </div>
+
+      {entry.data.registrationUrl && (
+        <Button asChild size="lg" className="w-full sm:w-auto rounded-full px-8">
+          <a href={entry.data.registrationUrl} target="_blank" rel="noopener noreferrer">
+            S'inscrire à l'événement
+          </a>
+        </Button>
+      )}
+    </div>
+
+    <div class="prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-img:rounded-xl">
+      <Content />
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import Layout from "@/layouts/main.astro"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { getCollection } from "astro:content"
+
+const allNews = await getCollection("news")
+const news = allNews.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+---
+
+<Layout title="Actualités | HEC IA" description="Les dernières actualités de l'association HEC IA et du monde de l'intelligence artificielle.">
+  <div class="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Actualités</h1>
+      <p class="text-xl text-muted-foreground">
+        Restez informé des dernières nouvelles de l'association et de l'industrie.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {news.map(item => (
+        <Card className="flex flex-col h-full border-border/50 hover:border-accent-yellow/50 transition-colors">
+          <CardHeader>
+            <div class="flex items-center gap-2 mb-2">
+              <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
+                {item.data.category}
+              </Badge>
+              <time class="text-sm text-muted-foreground" datetime={item.data.pubDate.toISOString()}>
+                {item.data.pubDate.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            </div>
+            <CardTitle className="text-xl line-clamp-2">
+              <a href={`/news/${item.id}`} class="hover:text-accent-yellow transition-colors">
+                {item.data.title}
+              </a>
+            </CardTitle>
+            <CardDescription className="line-clamp-3 mt-2">
+              {item.data.summary}
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      ))}
+    </div>
+  </div>
+</Layout>

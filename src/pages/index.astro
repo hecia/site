@@ -1,17 +1,213 @@
 ---
 import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import TextType from "@/components/TextType"
+import { getCollection } from "astro:content"
+
+const allEvents = await getCollection("events", ({ data }) => !data.draft)
+const upcomingEvents = allEvents
+  .filter(e => e.data.startDate > new Date())
+  .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf())
+  .slice(0, 3)
+
+const allProjects = await getCollection("projects")
+const featuredProjects = allProjects
+  .filter(p => p.data.featured)
+  .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+  .slice(0, 3)
+
+const allBlog = await getCollection("blog", ({ data }) => !data.draft)
+const recentBlog = allBlog
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3)
+
+const allNews = await getCollection("news")
+const recentNews = allNews
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3)
 ---
 
-<Layout>
-  <div class="flex min-h-svh p-6">
-    <div class="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-      <div>
-        <h1 class="font-medium">Project ready!</h1>
-        <p>You may now add components and start building.</p>
-        <p>We've already added the button component for you.</p>
-        <Button client:load className="mt-2">Button</Button>
+<Layout title="HEC IA - Accueil">
+  <section class="relative overflow-hidden py-24 md:py-32 lg:py-40">
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+      <div class="max-w-3xl mx-auto text-center space-y-8">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
+          L'Intelligence Artificielle à <br class="hidden md:block" />
+          <TextType
+            client:load
+            as="span"
+            className="text-primary"
+            text="HEC Paris"
+            typingSpeed={75}
+            pauseDuration={4000}
+            showCursor
+            cursorCharacter="|"
+            cursorClassName="text-primary font-light"
+            cursorBlinkDuration={0.5}
+            loop={false}
+          />
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          Nous sommes l'association étudiante dédiée à la démocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <Button asChild size="lg" className="w-full sm:w-auto rounded-full px-8">
+            <a href="/events">Nos Événements</a>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="w-full sm:w-auto rounded-full px-8">
+            <a href="/projects">Découvrir nos Projets</a>
+          </Button>
+        </div>
       </div>
     </div>
-  </div>
+    
+    <!-- Decorative background elements -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-cyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+  </section>
+
+  {upcomingEvents.length > 0 && (
+    <section class="py-16 md:py-24 bg-muted/30">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="text-3xl font-bold tracking-tight">Événements à venir</h2>
+          <a href="/events" class="text-sm font-medium text-primary hover:underline">Voir tout &rarr;</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {upcomingEvents.map(event => (
+            <Card className="flex flex-col h-full border-border/50 bg-background/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
+              <CardHeader>
+                <div class="flex justify-between items-start gap-4 mb-2">
+                  <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                    {event.data.startDate.toLocaleDateString('fr-CA', { month: 'short', day: 'numeric' })}
+                  </Badge>
+                  {event.data.online && <Badge variant="outline">En ligne</Badge>}
+                </div>
+                <CardTitle className="text-xl line-clamp-2"><a href={`/events/${event.id}`} class="hover:text-primary transition-colors">{event.data.title}</a></CardTitle>
+                <CardDescription className="line-clamp-2">{event.data.description}</CardDescription>
+              </CardHeader>
+              <CardFooter className="mt-auto pt-4 border-t border-border/50 text-sm text-muted-foreground">
+                <span class="truncate">{event.data.location}</span>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {featuredProjects.length > 0 && (
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="text-3xl font-bold tracking-tight">Projets en vedette</h2>
+          <a href="/projects" class="text-sm font-medium text-primary hover:underline">Voir tout &rarr;</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredProjects.map(project => (
+            <Card className="flex flex-col h-full border-border/50 hover:border-accent-orange/50 transition-colors">
+              <CardHeader>
+                <div class="flex justify-between items-start mb-2">
+                  <Badge variant={project.data.status === 'active' ? 'default' : 'secondary'}>
+                    {project.data.status === 'active' ? 'En cours' : project.data.status === 'completed' ? 'Terminé' : 'Archivé'}
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl line-clamp-2"><a href={`/projects/${project.id}`} class="hover:text-accent-orange transition-colors">{project.data.title}</a></CardTitle>
+                <CardDescription className="line-clamp-3">{project.data.description}</CardDescription>
+              </CardHeader>
+              <CardContent className="mt-auto">
+                <div class="flex flex-wrap gap-2">
+                  {project.data.technologies.slice(0, 3).map(tech => (
+                    <Badge variant="outline" className="text-xs">{tech}</Badge>
+                  ))}
+                  {project.data.technologies.length > 3 && (
+                    <Badge variant="outline" className="text-xs">+{project.data.technologies.length - 3}</Badge>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="py-16 md:py-24 bg-muted/30">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
+        
+        {/* Blog Preview */}
+        <div>
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold tracking-tight">Derniers articles</h2>
+            <a href="/blog" class="text-sm font-medium text-primary hover:underline">Voir tout &rarr;</a>
+          </div>
+          <div class="space-y-6">
+            {recentBlog.map(post => (
+              <div class="group flex flex-col gap-2">
+                <p class="text-sm text-muted-foreground">
+                  {post.data.pubDate.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </p>
+                <h3 class="text-lg font-semibold leading-tight group-hover:text-primary transition-colors">
+                  <a href={`/blog/${post.id}`}>
+                    <span class="absolute inset-0"></span>
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="text-sm text-muted-foreground line-clamp-2">{post.data.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* News Preview */}
+        <div>
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold tracking-tight">Actualités</h2>
+            <a href="/news" class="text-sm font-medium text-primary hover:underline">Voir tout &rarr;</a>
+          </div>
+          <div class="space-y-6">
+            {recentNews.map(item => (
+              <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
+                <div class="flex items-center gap-2">
+                  <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
+                    {item.data.category}
+                  </Badge>
+                  <span class="text-xs text-muted-foreground">
+                    {item.data.pubDate.toLocaleDateString('fr-CA', { month: 'short', day: 'numeric' })}
+                  </span>
+                </div>
+                <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
+                  <a href={`/news/${item.id}`}>
+                    {item.data.title}
+                  </a>
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<script is:inline>
+  (function() {
+    var colors = ['#F14703', '#EF1A01', '#398D88'];
+    var key = 'hec-ia-accent';
+    var color;
+    try {
+      color = sessionStorage.getItem(key);
+      if (!color || colors.indexOf(color) === -1) {
+        color = colors[Math.floor(Math.random() * colors.length)];
+        sessionStorage.setItem(key, color);
+      }
+    } catch(e) {
+      color = colors[Math.floor(Math.random() * colors.length)];
+    }
+    document.documentElement.style.setProperty('--primary', color);
+  })();
+</script>

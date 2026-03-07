@@ -1,0 +1,52 @@
+---
+import Layout from "@/layouts/main.astro"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { getCollection } from "astro:content"
+
+const allBlog = await getCollection("blog", ({ data }) => !data.draft)
+const posts = allBlog.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+---
+
+<Layout title="Blog | HEC IA" description="Articles et réflexions sur l'intelligence artificielle par les membres de HEC IA.">
+  <div class="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Blog</h1>
+      <p class="text-xl text-muted-foreground">
+        Articles, tutoriels et réflexions sur l'intelligence artificielle par notre communauté.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map(post => (
+        <Card className="flex flex-col h-full border-border/50 hover:border-primary/50 transition-colors">
+          <CardHeader>
+            <div class="flex items-center gap-2 mb-2">
+              <time class="text-sm text-muted-foreground" datetime={post.data.pubDate.toISOString()}>
+                {post.data.pubDate.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            </div>
+            <CardTitle className="text-xl line-clamp-2">
+              <a href={`/blog/${post.id}`} class="hover:text-primary transition-colors">
+                {post.data.title}
+              </a>
+            </CardTitle>
+            <CardDescription className="line-clamp-3 mt-2">
+              {post.data.description}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="mt-auto">
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.slice(0, 3).map(tag => (
+                <Badge variant="secondary" className="text-xs">{tag}</Badge>
+              ))}
+            </div>
+          </CardContent>
+          <CardFooter className="pt-4 border-t border-border/50 text-sm text-muted-foreground">
+            Par {post.data.author}
+          </CardFooter>
+        </Card>
+      ))}
+    </div>
+  </div>
+</Layout>

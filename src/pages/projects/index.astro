@@ -1,0 +1,49 @@
+---
+import Layout from "@/layouts/main.astro"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { getCollection } from "astro:content"
+
+const allProjects = await getCollection("projects")
+const projects = allProjects.sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+---
+
+<Layout title="Projets | HEC IA" description="Découvrez les projets d'intelligence artificielle réalisés par les membres de HEC IA.">
+  <div class="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Projets</h1>
+      <p class="text-xl text-muted-foreground">
+        Découvrez les initiatives et projets techniques réalisés par nos membres.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map(project => (
+        <Card className="flex flex-col h-full border-border/50 hover:border-accent-orange/50 transition-colors">
+          <CardHeader>
+            <div class="flex justify-between items-start mb-2">
+              <Badge variant={project.data.status === 'active' ? 'default' : 'secondary'}>
+                {project.data.status === 'active' ? 'En cours' : project.data.status === 'completed' ? 'Terminé' : 'Archivé'}
+              </Badge>
+            </div>
+            <CardTitle className="text-xl line-clamp-2">
+              <a href={`/projects/${project.id}`} class="hover:text-accent-orange transition-colors">
+                {project.data.title}
+              </a>
+            </CardTitle>
+            <CardDescription className="line-clamp-3 mt-2">
+              {project.data.description}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="mt-auto">
+            <div class="flex flex-wrap gap-2">
+              {project.data.technologies.map(tech => (
+                <Badge variant="outline" className="text-xs">{tech}</Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,87 @@
+---
+import Layout from "@/layouts/main.astro"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { getCollection } from "astro:content"
+
+const allEvents = await getCollection("events", ({ data }) => !data.draft)
+const now = new Date()
+
+const upcomingEvents = allEvents
+  .filter(e => e.data.startDate > now)
+  .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf())
+
+const pastEvents = allEvents
+  .filter(e => e.data.startDate <= now)
+  .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+---
+
+<Layout title="Événements | HEC IA" description="Découvrez nos prochains événements, ateliers et conférences sur l'IA.">
+  <div class="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Événements</h1>
+      <p class="text-xl text-muted-foreground">
+        Ateliers, conférences, et rencontres pour explorer l'intelligence artificielle.
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      <section>
+        <h2 class="text-3xl font-bold tracking-tight mb-8">À venir</h2>
+        {upcomingEvents.length > 0 ? (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {upcomingEvents.map(event => (
+              <Card className="flex flex-col h-full border-border/50 hover:border-primary/50 transition-colors">
+                <CardHeader>
+                  <div class="flex justify-between items-start gap-4 mb-2">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                      {event.data.startDate.toLocaleDateString('fr-CA', { month: 'short', day: 'numeric', year: 'numeric' })}
+                    </Badge>
+                    {event.data.online && <Badge variant="outline">En ligne</Badge>}
+                  </div>
+                  <CardTitle className="text-xl line-clamp-2">
+                    <a href={`/events/${event.id}`} class="hover:text-primary transition-colors">
+                      {event.data.title}
+                    </a>
+                  </CardTitle>
+                  <CardDescription className="line-clamp-2 mt-2">
+                    {event.data.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter className="mt-auto pt-4 border-t border-border/50 text-sm text-muted-foreground">
+                  <span class="truncate">{event.data.location}</span>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        ) : (
+          <p class="text-muted-foreground">Aucun événement à venir pour le moment. Restez à l'affût !</p>
+        )}
+      </section>
+
+      {pastEvents.length > 0 && (
+        <section>
+          <h2 class="text-3xl font-bold tracking-tight mb-8">Passés</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-80">
+            {pastEvents.map(event => (
+              <Card className="flex flex-col h-full border-border/50 bg-muted/20">
+                <CardHeader>
+                  <div class="flex justify-between items-start gap-4 mb-2">
+                    <Badge variant="outline" className="text-muted-foreground">
+                      {event.data.startDate.toLocaleDateString('fr-CA', { month: 'short', day: 'numeric', year: 'numeric' })}
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-xl line-clamp-2">
+                    <a href={`/events/${event.id}`} class="hover:text-primary transition-colors">
+                      {event.data.title}
+                    </a>
+                  </CardTitle>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  </div>
+</Layout>
