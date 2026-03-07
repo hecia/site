@@ -3,7 +3,7 @@ import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import TextType from "@/components/TextType"
+import HeroTitle from "@/components/HeroTitle"
 import { getCollection } from "astro:content"
 
 const allEvents = await getCollection("events", ({ data }) => !data.draft)
@@ -27,28 +27,23 @@ const allNews = await getCollection("news")
 const recentNews = allNews
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3)
+
+const members = [
+  { name: "Alexandre Dubois", role: "Président", initials: "AD" },
+  { name: "Marie Chen", role: "Vice-Présidente", initials: "MC" },
+  { name: "Thomas Martin", role: "Trésorier", initials: "TM" },
+  { name: "Sarah Benali", role: "Secrétaire Générale", initials: "SB" },
+  { name: "Lucas Petit", role: "Responsable Tech", initials: "LP" },
+  { name: "Emma Leroy", role: "Responsable Communication", initials: "EL" },
+]
 ---
 
 <Layout title="HEC IA - Accueil">
-  <section class="relative overflow-hidden py-24 md:py-32 lg:py-40">
+  <!-- Hero -->
+  <section class="relative overflow-hidden snap-start min-h-[calc(100dvh)] flex items-center">
     <div class="container mx-auto px-4 md:px-8 relative z-10">
-      <div class="max-w-3xl mx-auto text-center space-y-8">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
-          L'Intelligence Artificielle à <br class="hidden md:block" />
-          <TextType
-            client:load
-            as="span"
-            className="text-primary"
-            text="HEC Paris"
-            typingSpeed={75}
-            pauseDuration={4000}
-            showCursor
-            cursorCharacter="|"
-            cursorClassName="text-primary font-light"
-            cursorBlinkDuration={0.5}
-            loop={false}
-          />
-        </h1>
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <HeroTitle client:load />
         <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Nous sommes l'association étudiante dédiée à la démocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.
         </p>
@@ -62,14 +57,38 @@ const recentNews = allNews
         </div>
       </div>
     </div>
-    
-    <!-- Decorative background elements -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
     <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-cyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
   </section>
 
+  <!-- Le Bureau -->
+  <section class="py-16 md:py-24 snap-start" id="bureau">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Le Bureau</h2>
+        <p class="text-muted-foreground max-w-xl mx-auto">Les membres qui font vivre l'association au quotidien.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        {members.map(member => (
+          <div class="flex flex-col items-center text-center gap-3">
+            <div class="relative group">
+              <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-border flex items-center justify-center group-hover:border-primary/50 transition-colors">
+                <span class="text-2xl font-bold text-primary">{member.initials}</span>
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold text-sm leading-tight">{member.name}</p>
+              <p class="text-xs text-muted-foreground mt-1">{member.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Événements -->
   {upcomingEvents.length > 0 && (
-    <section class="py-16 md:py-24 bg-muted/30">
+    <section class="py-16 md:py-24 bg-muted/30 snap-start">
       <div class="container mx-auto px-4 md:px-8">
         <div class="flex items-center justify-between mb-10">
           <h2 class="text-3xl font-bold tracking-tight">Événements à venir</h2>
