@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@fontsource-variable/bricolage-grotesque": "^5.2.10",
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@fontsource-variable/roboto-flex": "^5.2.8",
     "@tailwindcss/typography": "^0.5.19",

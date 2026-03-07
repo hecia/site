@@ -5,7 +5,10 @@ import TextType from "./TextType"
 export default function HeroTitle() {
   return (
     <div className="relative">
-      <h1 className="text-center text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
+      <h1
+        className="text-center text-4xl tracking-tight md:text-6xl lg:text-7xl"
+        style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
+      >
         <TextType
           as="span"
           text={[

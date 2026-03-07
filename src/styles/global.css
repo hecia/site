@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/jetbrains-mono";
 @import "@fontsource-variable/roboto-flex";
+@import "@fontsource-variable/bricolage-grotesque";
 
 @plugin "@tailwindcss/typography";
 
@@ -79,6 +80,7 @@
 
 @theme inline {
   --font-mono: "JetBrains Mono Variable", monospace;
+  --font-display: "Bricolage Grotesque Variable", sans-serif;
   --color-accent-orange: oklch(0.654 0.178 50.2);
   --color-accent-yellow: oklch(0.745 0.15 85.1);
   --color-accent-cyan: oklch(0.698 0.118 230.5);
