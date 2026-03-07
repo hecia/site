@@ -29,12 +29,11 @@ const recentNews = allNews
   .slice(0, 3)
 
 const members = [
-  { name: "Alexandre Dubois", role: "Président", initials: "AD" },
-  { name: "Marie Chen", role: "Vice-Présidente", initials: "MC" },
-  { name: "Thomas Martin", role: "Trésorier", initials: "TM" },
-  { name: "Sarah Benali", role: "Secrétaire Générale", initials: "SB" },
-  { name: "Lucas Petit", role: "Responsable Tech", initials: "LP" },
-  { name: "Emma Leroy", role: "Responsable Communication", initials: "EL" },
+  { name: "Magloire Guillet", role: "Co-Président", initials: "MG", image: "/members/magloire-guillet.jpeg" },
+  { name: "Alexandre Houard", role: "Co-Présidente", initials: "AH", image: "/members/alexandre-houard.jpeg" },
+  { name: "Alban Poutier", role: "Secrétaire Général", initials: "AP", image: "/members/alban-poutier.jpeg" },
+  { name: "Pauline Zmiro", role: "Trésorière", initials: "SB", image: "/members/pauline-zmiro.jpeg" },
+  { name: "Octave Dumont", role: "Vice-Président : HEC IA Intelligence", initials: "OD", image: "/members/octave-dumont.jpeg" },
 ]
 ---
 
@@ -68,17 +67,23 @@ const members = [
         <h2 class="text-3xl font-bold tracking-tight mb-4">Le Bureau</h2>
         <p class="text-muted-foreground max-w-xl mx-auto">Les membres qui font vivre l'association au quotidien.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+      <div class="flex flex-wrap justify-center gap-8">
         {members.map(member => (
-          <div class="flex flex-col items-center text-center gap-3">
+          <div class="flex flex-col items-center text-center gap-4">
             <div class="relative group">
-              <div class="w-24 h-24 rounded-full bg-primary/10 border-2 border-border flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                <span class="text-2xl font-bold text-primary">{member.initials}</span>
+              <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-primary/10 border-2 border-border overflow-hidden group-hover:border-primary/50 transition-colors">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  class="w-full h-full object-cover"
+                  onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
+                />
+                <span class="text-3xl font-bold text-primary w-full h-full items-center justify-center hidden">{member.initials}</span>
               </div>
             </div>
             <div>
-              <p class="font-semibold text-sm leading-tight">{member.name}</p>
-              <p class="text-xs text-muted-foreground mt-1">{member.role}</p>
+              <p class="font-semibold text-base leading-tight">{member.name}</p>
+              <p class="text-sm text-muted-foreground mt-1">{member.role}</p>
             </div>
           </div>
         ))}

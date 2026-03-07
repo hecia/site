@@ -7,7 +7,7 @@ location: "Salle 204, Batiment W, Campus HEC"
 online: false
 capacity: 30
 tags: ["workshop", "prompt-engineering", "pratique", "debutant"]
-draft: false
+draft: true
 ---
 
 ## Au programme

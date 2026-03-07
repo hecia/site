@@ -8,7 +8,7 @@ online: false
 registrationUrl: "https://forms.gle/example-hackathon"
 capacity: 60
 tags: ["hackathon", "agents", "llm", "competition"]
-draft: false
+draft: true
 ---
 
 ## Le concept

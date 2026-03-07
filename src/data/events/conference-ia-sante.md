@@ -1,13 +1,13 @@
 ---
-title: "Conference : L'IA au service de la sante"
-description: "Une soiree de conferences et de debats avec des chercheurs et entrepreneurs qui transforment le secteur de la sante grace a l'intelligence artificielle."
+title: "Hackathon : X-HEC Paris"
+description: "50% École Polytechnique (X) and 50% HEC Paris students will join forces to form hybrid teams for an intense 4-hour sprint."
 startDate: 2026-03-25T18:30:00
 endDate: 2026-03-25T21:30:00
-location: "Amphitheatre Blondeau, Campus HEC Paris"
+location: "HEC Paris Campus"
 online: true
 registrationUrl: "https://forms.gle/example-conference"
 capacity: 200
-tags: ["conference", "sante", "recherche", "ethique"]
+tags: ["hackathon", "x-hec", "build"]
 draft: false
 ---
 
