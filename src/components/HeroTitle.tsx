@@ -14,7 +14,7 @@ const HeroTitle: React.FC<HeroTitleProps> = ({ lang = "fr" }) => {
           "La tech",
           "L'IA agentique",
           "La programmation",
-          "Le Machine Learning",
+          "ML",
           "L'innovation tech",
         ]
       : [
@@ -22,7 +22,7 @@ const HeroTitle: React.FC<HeroTitleProps> = ({ lang = "fr" }) => {
           "Tech",
           "Agentic AI",
           "Programming",
-          "Machine Learning",
+          "ML",
           "Tech Innovation",
         ]
   const suffix = lang === "fr" ? " à" : " at"
