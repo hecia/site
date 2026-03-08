@@ -5,8 +5,9 @@ status: "active"
 startDate: 2025-09-15
 technologies: ["Python", "LangChain", "ChromaDB", "Streamlit", "OpenAI API"]
 members: ["Camille Dubois", "Yuki Tanaka", "Lucas Martin", "Ines Belkacem"]
-featured: true
+featured: false
 githubUrl: "https://github.com/hec-ia/studybot"
+draft: true
 ---
 
 ## Le projet

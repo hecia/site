@@ -4,7 +4,8 @@ summary: "L'AI Act europeen entre en application progressive. Analyse des implic
 pubDate: 2026-03-05
 category: "industry"
 tags: ["regulation", "ai-act", "europe", "politique"]
-featured: true
+featured: false
+draft: true
 ---
 
 Le reglement europeen sur l'intelligence artificielle (AI Act) entre dans sa phase d'application concrete en 2026. Quels impacts pour les acteurs du secteur ?

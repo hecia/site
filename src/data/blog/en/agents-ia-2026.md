@@ -4,7 +4,7 @@ description: "Deux ans apres l'explosion des agents autonomes, faisons le point 
 pubDate: 2026-03-01
 author: "Sofia Chen"
 tags: ["agents", "llm", "automatisation", "analyse"]
-draft: false
+draft: true
 ---
 
 En 2024, tout le monde parlait des agents IA comme la prochaine revolution. Deux ans plus tard, quel bilan peut-on dresser ?

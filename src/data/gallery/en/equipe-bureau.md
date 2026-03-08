@@ -6,4 +6,5 @@ image:
   src: "/gallery/equipe-bureau.jpg"
   alt: "Les membres du bureau HEC IA 2025-2026"
 category: "vie-associative"
+draft: true
 ---

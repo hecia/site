@@ -9,16 +9,19 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-const links = [
-  { href: "/", label: "Accueil" },
-  { href: "/events", label: "Événements" },
-  { href: "/projects", label: "Projets" },
-  { href: "/blog", label: "Blog" },
-  { href: "/news", label: "Actualités" },
-  { href: "/gallery", label: "Galerie" },
-]
+export interface MobileNavProps {
+  links?: { href: string; label: string }[]
+}
 
-export function MobileNav() {
+const MobileNav: React.FC<MobileNavProps> = ({ links: propLinks }) => {
+  const links = propLinks || [
+    { href: "/", label: "Accueil" },
+    { href: "/events", label: "Événements" },
+    { href: "/projects", label: "Projets" },
+    { href: "/blog", label: "Blog" },
+    { href: "/news", label: "Actualités" },
+    { href: "/gallery", label: "Galerie" },
+  ]
   const [open, setOpen] = React.useState(false)
 
   return (
@@ -49,3 +52,5 @@ export function MobileNav() {
     </Sheet>
   )
 }
+
+export default MobileNav

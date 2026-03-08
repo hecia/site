@@ -10,9 +10,9 @@ import {
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog", ({ data }) => !data.draft)
-  const frEntries = blogEntries.filter((entry) => entry.id.startsWith("fr/"))
-  return frEntries.map((entry) => ({
-    params: { slug: entry.id.replace("fr/", "") },
+  const enEntries = blogEntries.filter((entry) => entry.id.startsWith("en/"))
+  return enEntries.map((entry) => ({
+    params: { slug: entry.id.replace("en/", "") },
     props: { entry },
   }))
 }

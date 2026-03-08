@@ -18,6 +18,7 @@ const blog = defineCollection({
       })
       .optional(),
     draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
   }),
 })
 
@@ -40,6 +41,7 @@ const events = defineCollection({
       })
       .optional(),
     draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
   }),
 })
 
@@ -55,6 +57,7 @@ const projects = defineCollection({
     demoUrl: z.string().url().optional(),
     technologies: z.array(z.string()).default([]),
     members: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
     featured: z.boolean().default(false),
     image: z
       .object({
@@ -75,6 +78,7 @@ const news = defineCollection({
     sourceUrl: z.string().url().optional(),
     category: z.enum(["association", "ai", "industry", "academic"]),
     tags: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
     featured: z.boolean().default(false),
   }),
 })
@@ -92,6 +96,8 @@ const gallery = defineCollection({
     category: z
       .enum(["événements", "projets", "vie-associative", "autre"])
       .default("autre"),
+    draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
   }),
 })
 

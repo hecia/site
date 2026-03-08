@@ -4,7 +4,7 @@ description: "Comment concilier innovation technologique et responsabilite dans 
 pubDate: 2026-01-28
 author: "Antoine Leroy"
 tags: ["ethique", "finance", "regulation", "opinion"]
-draft: false
+draft: true
 ---
 
 L'intelligence artificielle transforme le secteur financier a une vitesse vertigineuse. Du trading algorithmique a l'evaluation du risque credit, en passant par la detection de fraude, l'IA est partout. Mais cette revolution souleve des questions fondamentales.

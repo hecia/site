@@ -11,9 +11,9 @@ import {
 
 export async function getStaticPaths() {
   const projectEntries = await getCollection("projects", ({ data }) => !data.draft)
-  const frEntries = projectEntries.filter((entry) => entry.id.startsWith("fr/"))
-  return frEntries.map((entry) => ({
-    params: { slug: entry.id.replace("fr/", "") },
+  const enEntries = projectEntries.filter((entry) => entry.id.startsWith("en/"))
+  return enEntries.map((entry) => ({
+    params: { slug: entry.id.replace("en/", "") },
     props: { entry },
   }))
 }

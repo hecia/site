@@ -4,7 +4,8 @@ summary: "Notre association devient partenaire officiel de Mistral AI. Au progra
 pubDate: 2026-02-20
 category: "association"
 tags: ["partenariat", "mistral", "annonce"]
-featured: true
+featured: false
+draft: true
 ---
 
 Nous sommes fiers d'annoncer un partenariat officiel entre HEC IA et Mistral AI, la licorne francaise de l'intelligence artificielle.

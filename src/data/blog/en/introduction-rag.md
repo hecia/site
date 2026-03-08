@@ -4,7 +4,7 @@ description: "Le Retrieval-Augmented Generation (RAG) revolutionne l'usage des L
 pubDate: 2026-02-15
 author: "Camille Dubois"
 tags: ["rag", "llm", "entreprise", "tutoriel"]
-draft: false
+draft: true
 ---
 
 Le **Retrieval-Augmented Generation** (RAG) est devenu l'une des architectures les plus populaires pour deployer des modeles de langage en contexte professionnel. Mais pourquoi tout le monde en parle ?

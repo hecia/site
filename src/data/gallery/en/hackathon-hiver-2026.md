@@ -6,4 +6,5 @@ image:
   src: "/gallery/hackathon-hiver.jpg"
   alt: "Participants du hackathon d'hiver 2026 travaillant en equipe"
 category: "événements"
+draft: true
 ---

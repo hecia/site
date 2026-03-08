@@ -8,6 +8,7 @@ technologies: ["TypeScript", "Next.js", "Vercel AI SDK", "Pinecone", "Claude API
 members: ["Marc Dupont", "Lea Zhang", "Omar Benali"]
 featured: false
 demoUrl: "https://admissions-bot.hec-ia.com"
+draft: true
 ---
 
 ## Le projet

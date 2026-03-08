@@ -2,7 +2,30 @@
 
 import TextType from "./TextType"
 
-export default function HeroTitle() {
+export interface HeroTitleProps {
+  lang?: string
+}
+
+const HeroTitle: React.FC<HeroTitleProps> = ({ lang = "fr" }) => {
+  const texts =
+    lang === "fr"
+      ? [
+          "L'Intelligence Artificielle",
+          "La tech",
+          "L'IA agentique",
+          "La programmation",
+          "Le Machine Learning",
+          "L'innovation tech",
+        ]
+      : [
+          "Artificial Intelligence",
+          "Tech",
+          "Agentic AI",
+          "Programming",
+          "Machine Learning",
+          "Tech Innovation",
+        ]
+  const suffix = lang === "fr" ? " à" : " at"
   return (
     <div className="relative">
       <h1
@@ -11,14 +34,7 @@ export default function HeroTitle() {
       >
         <TextType
           as="span"
-          text={[
-            "L'Intelligence Artificielle",
-            "La tech",
-            "L'IA agentique",
-            "La programmation",
-            "Le Machine Learning",
-            "L'innovation tech",
-          ]}
+          text={texts}
           typingSpeed={75}
           deletingSpeed={50}
           pauseDuration={3000}
@@ -28,10 +44,12 @@ export default function HeroTitle() {
           cursorBlinkDuration={0.5}
           loop
         />
-        <span className="text-foreground"> à</span>
+        <span className="text-foreground">{suffix}</span>
         <br />
         <span className="text-primary">HEC Paris</span>
       </h1>
     </div>
   )
 }
+
+export default HeroTitle

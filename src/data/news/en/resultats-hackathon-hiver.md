@@ -5,6 +5,7 @@ pubDate: 2026-01-20
 category: "association"
 tags: ["hackathon", "resultats", "communaute"]
 featured: false
+draft: true
 ---
 
 Notre hackathon d'hiver s'est tenu les 18 et 19 janvier sur le campus HEC. Le theme : "LLMs en entreprise - de la demo au produit".

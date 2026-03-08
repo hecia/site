@@ -5,7 +5,8 @@ status: "active"
 startDate: 2025-11-01
 technologies: ["Python", "GPT-4", "Notion API", "RSS", "GitHub Actions"]
 members: ["Sofia Chen", "Antoine Leroy", "Emma Petit"]
-featured: true
+featured: false
+draft: true
 githubUrl: "https://github.com/hec-ia/ia-radar"
 ---
 

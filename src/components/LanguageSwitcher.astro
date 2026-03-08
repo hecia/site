@@ -1,0 +1,25 @@
+---
+import { languages } from "@/i18n/ui"
+import { getLangFromUrl, getLocaleUrl } from "@/i18n/utils"
+const lang = getLangFromUrl(Astro.url)
+---
+
+<div class="flex items-center gap-3 text-sm text-muted-foreground">
+  {Object.entries(languages).map(([code, label], index) => (
+    <>
+      {lang === code ? (
+        <span class="font-bold text-foreground">{label}</span>
+      ) : (
+        <a
+          href={getLocaleUrl(Astro.url, code as keyof typeof languages)}
+          class="hover:text-primary"
+        >
+          {label}
+        </a>
+      )}
+      {index < Object.entries(languages).length - 1 && (
+        <span class="text-muted-foreground/40">/</span>
+      )}
+    </>
+  ))}
+</div>
