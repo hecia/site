@@ -1,36 +1,72 @@
-# Astro + React + TypeScript + shadcn/ui
+# hec-ia.com
 
-This is a template for a new Astro project with React, TypeScript, and shadcn/ui.
+Official website of HEC IA, the student association at HEC Paris dedicated to artificial intelligence.
 
-## Adding components
+## Stack
 
-To add components to your app, run the following command:
+- [Astro 5](https://astro.build) — static-first framework with server-side rendering
+- [React 19](https://react.dev) — interactive components
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [shadcn/ui](https://ui.shadcn.com) — component library
+- [Cloudflare Workers](https://workers.cloudflare.com) — deployment target
+
+## Prerequisites
+
+- Node.js >= 18
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) for deployment
+
+## Getting started
 
 ```bash
-npx shadcn@latest add button
+npm install
+npm run dev
 ```
 
-This will place the ui components in the `src/components` directory.
+## Scripts
 
-## Using components
+| Command             | Description                             |
+| ------------------- | --------------------------------------- |
+| `npm run dev`       | Start the development server            |
+| `npm run build`     | Build for production                    |
+| `npm run preview`   | Build and preview locally via Wrangler  |
+| `npm run deploy`    | Build and deploy to Cloudflare Workers  |
+| `npm run lint`      | Run ESLint                              |
+| `npm run format`    | Format source files with Prettier       |
+| `npm run typecheck` | Run TypeScript checks via `astro check` |
 
-To use the components in your app, import them in an `.astro` file:
+## Project structure
 
-```astro
----
-import { Button } from "@/components/ui/button"
----
+```
+src/
+  components/   — Shared UI components
+  content/      — Content collections (events, projects, blog, news)
+  data/         — Static data files
+  i18n/         — Translations and routing utilities
+  layouts/      — Page layouts
+  lib/          — Utility functions
+  pages/        — File-based routes
+  styles/       — Global styles
+```
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro App</title>
-  </head>
-  <body>
-    <div class="grid h-screen place-items-center content-center">
-      <Button>Button</Button>
-    </div>
-  </body>
-</html>
+## Internationalization
+
+The site supports French (default) and English. Routes are prefixed with `/en/` for English; French URLs have no prefix.
+
+Translations live in `src/i18n/ui.ts`.
+
+## Adding UI components
+
+```bash
+npx shadcn@latest add <component>
+```
+
+Components are placed in `src/components/ui/`.
+
+## Deployment
+
+The site is deployed on Cloudflare Workers. Configuration is in `wrangler.jsonc`.
+
+```bash
+npm run deploy
 ```
