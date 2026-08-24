@@ -1,7 +1,7 @@
 ---
 title: "Octave Dumont, speaker à VivaTech 2026"
 summary: "Octave Dumont (VP HEC IA Intelligence, CTO Galahad) est intervenu à VivaTech 2026 avec Wavestone sur l'industrialisation de l'IA en entreprise."
-pubDate: 2026-08-24
+pubDate: 2026-06-20
 source: "VivaTech"
 sourceUrl: "https://vivatech.com/sessions/session/9af4bab2-3966-f111-8fcb-6045bd954326"
 category: "association"
