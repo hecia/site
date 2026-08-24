@@ -1,7 +1,7 @@
 ---
 title: "HEC AI x Anthropic : Frontier Dinner"
 description: "Dîner IA organisé avec Anthropic dans le cadre du cycle de dîners partenaires HEC IA."
-startDate: 2026-08-05T20:00:00
+startDate: 2026-05-05T20:00:00
 location: "Paris (lieu précis non communiqué)"
 online: false
 tags: ["dinner", "anthropic", "frontier-ai", "partenariat"]
