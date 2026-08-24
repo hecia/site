@@ -1,7 +1,7 @@
 ---
 title: "Retour du GITEX AI Asia 2026 à Singapour"
 summary: "Hugo Roullet et Axel Lefèvre représentaient HEC IA au GITEX AI Asia 2026, dans le cadre de leurs travaux de recherche avec la National University of Singapore."
-pubDate: 2026-08-24
+pubDate: 2026-04-09
 category: "association"
 tags: ["gitex", "singapour", "nus", "hardware", "recherche"]
 image:
