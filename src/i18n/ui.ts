@@ -34,7 +34,7 @@ export const ui = {
     "home.events.seeAll": "Voir tout",
     "home.news.title": "Actualit\u00e9s",
     "home.news.seeAll": "Voir tout",
-    "home.eventPartners.title": "Présents à nos événements",
+    "home.eventPartners.title": "Nos partenaires",
     "home.eventPartners.subtitle":
       "Des entreprises qui ont pris part à un dîner, un talk ou un hackathon avec HEC IA.",
     "home.join.title": "Rejoignez-nous",
@@ -110,7 +110,7 @@ export const ui = {
     "home.events.seeAll": "See all",
     "home.news.title": "News",
     "home.news.seeAll": "See all",
-    "home.eventPartners.title": "Featured at our events",
+    "home.eventPartners.title": "Our partners",
     "home.eventPartners.subtitle":
       "Companies that have taken part in a dinner, talk or hackathon with HEC IA.",
     "home.join.title": "Join Us",
