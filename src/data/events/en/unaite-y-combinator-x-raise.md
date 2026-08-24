@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Y Combinator visiting Paris ahead of the RAISE Summit, with stories and practical advice from founders and YC partners: Solomon Hykes (Docker and Dagger co-founder), Paul Copplestone (Supabase co-founder), Tom Blomfield (GoCardless and Monzo co-founder, YC General Partner) and Nicolas Dessaigne (Algolia co-founder, YC General Partner).
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/872cp8s0

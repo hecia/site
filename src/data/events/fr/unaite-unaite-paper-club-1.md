@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Hugo Touvron (équipe Llama, Meta FAIR) retrace le chemin du papier Llama original jusqu'à Llama 4 : choix d'architecture, stratégies d'entraînement, processus de découverte derrière ce modèle de langage à poids ouverts.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/clcszco4

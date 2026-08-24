@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Finale de l'accélérateur Ignaite (approche founder-first) : pitches de 12 startups tech/IA, ateliers avec Dust, Hexa, Speedinvest et Kima Ventures, interventions sur les modèles de financement. Partenaires : Google, Anthropic, Kima Ventures, Dust, Speedinvest, Hexa, Singular.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/xziyluaf

@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Table ronde sur l'avenir de l'IA en France, avec William El Sayed (Mistral AI), Anne-Claire Baschet (Mirakl), Ivan Smets (Snowflake) et Chloé Timsit (Kima Ventures).
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/bakyq9l9

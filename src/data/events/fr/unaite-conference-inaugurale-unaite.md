@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Table ronde recherche puis table ronde enjeux IA/business, avec Isabelle Ryl (directrice de l'institut PRAIRIE), Alexandre Défossez (Chief Exploration Officer, Kyutai), Francis Bach (chercheur INRIA-ENS), Grégoire Mialon (chercheur, équipe Llama chez Meta), Yann Lechelle (co-fondateur et CEO de :probabl.), Mehdi Ghissassi (CPO, AI71) et Yohann Ralle (coordinateur national adjoint de la stratégie IA du gouvernement).
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/rje0m487

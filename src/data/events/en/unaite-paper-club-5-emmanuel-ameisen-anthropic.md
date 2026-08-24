@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Emmanuel Ameisen (Anthropic researcher) on language model interpretability: understanding the internal structure of models like Claude, planning mechanisms, universal cross-language representations, and text-length estimation capabilities.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/c7vonwwb

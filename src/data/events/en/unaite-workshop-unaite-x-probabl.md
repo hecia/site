@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Open-source contribution to skore, Probabl's library: setting up development environments, pair-contributing with scikit-learn core developers, documentation and testing best practices.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/rausqf28

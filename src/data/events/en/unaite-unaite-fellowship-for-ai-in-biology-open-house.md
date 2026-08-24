@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Open house for Unaite's AI x biology fellowship: an inaugural Paris cohort of 20 scientists, engineers and builders, mentored by researchers from Institut Pasteur, Gustave Roussy, FAIR (Meta) and ENS. Program: mentorship, paper clubs, hackathons, collaborative research.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/d027eojb

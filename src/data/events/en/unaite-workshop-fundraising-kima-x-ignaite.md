@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Fundraising workshop organized with Kima Ventures and Ignaite.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/7vaqmo9x

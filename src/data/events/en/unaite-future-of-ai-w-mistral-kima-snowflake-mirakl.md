@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Round table on the future of AI in France, with William El Sayed (Mistral AI), Anne-Claire Baschet (Mirakl), Ivan Smets (Snowflake) and Chloé Timsit (Kima Ventures).
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/bakyq9l9

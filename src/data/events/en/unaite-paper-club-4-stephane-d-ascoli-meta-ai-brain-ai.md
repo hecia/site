@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Stéphane d'Ascoli (Meta AI, Brain & AI team) presents TRIBE v2, a predictive foundation model for human brain activity: a kind of digital twin of the brain, able to predict responses to visual, auditory or language stimuli with a 70x resolution improvement over comparable alternatives.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/vcj47nsm

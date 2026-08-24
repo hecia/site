@@ -39,14 +39,14 @@ const isLogo = (src) => src.startsWith("/logos/") || src === "/logo.jpg"
         <Card className="flex flex-col h-full border-border/50 hover:border-accent-yellow/50 transition-colors overflow-hidden">
           {item.data.image && (
             isLogo(item.data.image.src) ? (
-              <div class="w-full h-40 bg-white flex items-center justify-center p-6">
+              <div class="w-full aspect-[4/3] bg-white flex items-center justify-center p-6">
                 <img src={item.data.image.src} alt={item.data.image.alt} class="max-h-full max-w-full object-contain" />
               </div>
             ) : (
               <img
                 src={item.data.image.src}
                 alt={item.data.image.alt}
-                class="w-full h-40 object-cover"
+                class="w-full aspect-[4/3] object-cover"
               />
             )
           )}

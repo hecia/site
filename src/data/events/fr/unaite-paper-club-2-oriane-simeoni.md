@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Oriane Siméoni (équipe DINO, Meta) présente DINOv3, un modèle d'apprentissage de représentations visuelles auto-supervisé : idées clés, enseignements techniques et pistes de recherche ouvertes.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/kk3fmaht

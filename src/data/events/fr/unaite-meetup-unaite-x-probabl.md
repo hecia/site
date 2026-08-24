@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Présentation de Probabl et de scikit-learn par Yann Lechelle, suivie de trois interventions sur la certification, les décisions probabilistes et une démonstration produit.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/ehlb25w3

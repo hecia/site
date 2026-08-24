@@ -49,11 +49,11 @@ const isLogo = (src) => src.startsWith("/logos/") || src === "/logo.jpg"
               <Card className="flex flex-col h-full border-border/50 hover:border-primary/50 transition-colors overflow-hidden">
                 {event.data.image && (
                   isLogo(event.data.image.src) ? (
-                    <div class="w-full h-36 bg-white flex items-center justify-center p-6">
+                    <div class="w-full aspect-[4/3] bg-white flex items-center justify-center p-6">
                       <img src={event.data.image.src} alt={event.data.image.alt} class="max-h-full max-w-full object-contain" />
                     </div>
                   ) : (
-                    <img src={event.data.image.src} alt={event.data.image.alt} class="w-full h-36 object-cover" />
+                    <img src={event.data.image.src} alt={event.data.image.alt} class="w-full aspect-[4/3] object-cover" />
                   )
                 )}
                 <CardHeader>
@@ -94,11 +94,11 @@ const isLogo = (src) => src.startsWith("/logos/") || src === "/logo.jpg"
               <Card className="flex flex-col h-full border-border/50 bg-muted/20 overflow-hidden">
                 {event.data.image && (
                   isLogo(event.data.image.src) ? (
-                    <div class="w-full h-28 bg-white flex items-center justify-center p-5">
+                    <div class="w-full aspect-[4/3] bg-white flex items-center justify-center p-5">
                       <img src={event.data.image.src} alt={event.data.image.alt} class="max-h-full max-w-full object-contain" />
                     </div>
                   ) : (
-                    <img src={event.data.image.src} alt={event.data.image.alt} class="w-full h-28 object-cover" />
+                    <img src={event.data.image.src} alt={event.data.image.alt} class="w-full aspect-[4/3] object-cover" />
                   )
                 )}
                 <CardHeader>

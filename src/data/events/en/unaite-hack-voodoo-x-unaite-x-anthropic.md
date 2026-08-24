@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+30-hour hackathon at Voodoo, one of the world's largest mobile game studios. Teams of 3 build browser-based games using AI tools, with mentors from Voodoo, Anthropic and Unaite. Prizes: €4,500 cash, unlimited Anthropic API access, and Scenario credits.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/p6ee72sy
