@@ -4,7 +4,7 @@ summary: "Un procès rejeté, Anthropic rachète Stainless, Gemini passe en mode
 pubDate: 2026-05-22
 source: "NBC News"
 sourceUrl: "https://www.nbcnews.com/tech/tech-news/openai-elon-musk-case-verdict-rcna345655"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "openai", "anthropic", "google", "spacex"]
 image:
   src: "/logo.jpg"

@@ -4,7 +4,7 @@ summary: "A $12.2 billion share purchase right, up to $120 billion in revenue fo
 pubDate: 2026-08-21
 source: "Bloomberg"
 sourceUrl: "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "google", "marvell", "broadcom", "hardware"]
 image:
   src: "/logo.jpg"

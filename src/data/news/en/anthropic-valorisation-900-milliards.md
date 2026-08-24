@@ -4,7 +4,7 @@ summary: "48 hours to submit allocations, a round that would put Anthropic above
 pubDate: 2026-05-01
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "anthropic", "openai", "fundraising"]
 image:
   src: "/logo.jpg"

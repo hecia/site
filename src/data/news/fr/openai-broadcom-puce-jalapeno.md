@@ -4,7 +4,7 @@ summary: "OpenAI et Broadcom dévoilent \"Jalapeño\", première puce IA conçue
 pubDate: 2026-06-26
 source: "BuildFastWithAI"
 sourceUrl: "https://www.buildfastwithai.com/blogs/ai-news-today-june-26-2026"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "openai", "broadcom", "hardware"]
 image:
   src: "/logo.jpg"

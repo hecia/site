@@ -4,7 +4,7 @@ summary: "135 dollars par action, 75 milliards levés, 1,75 trillion de valorisa
 pubDate: 2026-06-12
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "spacex", "ipo"]
 image:
   src: "/logo.jpg"

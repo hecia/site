@@ -4,7 +4,7 @@ summary: "SAP finalise le rachat de Prior Labs et engage plus d'un milliard d'eu
 pubDate: 2026-07-31
 source: "Google"
 sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "sap", "europe"]
 image:
   src: "/logo.jpg"

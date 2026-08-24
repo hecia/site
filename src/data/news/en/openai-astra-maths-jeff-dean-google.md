@@ -4,7 +4,7 @@ summary: "Astra makes progress on ten decades-old open problems for about $2,000
 pubDate: 2026-08-07
 source: "SiliconANGLE"
 sourceUrl: "https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/"
-category: "ai"
+category: "newsletter"
 tags: ["ai-watch", "openai", "google", "research"]
 image:
   src: "/logo.jpg"

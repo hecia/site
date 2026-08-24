@@ -4,7 +4,7 @@ summary: "Google Cloud Next, Claude Mythos 5 confirmé sans être public, GPT-5.
 pubDate: 2026-04-10
 source: "Google"
 sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "google", "anthropic", "openai", "meta"]
 image:
   src: "/logo.jpg"

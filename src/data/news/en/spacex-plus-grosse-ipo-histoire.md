@@ -4,7 +4,7 @@ summary: "$135 a share, $75 billion raised, a $1.75 trillion valuation: SpaceX o
 pubDate: 2026-06-12
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "spacex", "ipo"]
 image:
   src: "/logo.jpg"

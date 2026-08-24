@@ -4,7 +4,7 @@ summary: "OpenAI and Broadcom unveil \"Jalapeño,\" OpenAI's first custom-design
 pubDate: 2026-06-26
 source: "BuildFastWithAI"
 sourceUrl: "https://www.buildfastwithai.com/blogs/ai-news-today-june-26-2026"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "openai", "broadcom", "hardware"]
 image:
   src: "/logo.jpg"

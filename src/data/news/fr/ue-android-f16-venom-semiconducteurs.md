@@ -4,7 +4,7 @@ summary: "L'UE force Google à ouvrir Android aux assistants IA concurrents, la 
 pubDate: 2026-07-17
 source: "Commission européenne"
 sourceUrl: "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "google", "regulation", "defense", "semi-conducteurs"]
 image:
   src: "/logo.jpg"

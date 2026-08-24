@@ -4,7 +4,7 @@ summary: "GitHub switches Copilot to usage-based billing, Anthropic formally sta
 pubDate: 2026-06-05
 source: "BuildFastWithAI"
 sourceUrl: "https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "github", "anthropic", "regulation"]
 image:
   src: "/logo.jpg"

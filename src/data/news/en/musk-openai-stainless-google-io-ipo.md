@@ -4,7 +4,7 @@ summary: "A lawsuit dismissed, Anthropic buys Stainless, Gemini moves to agent m
 pubDate: 2026-05-22
 source: "NBC News"
 sourceUrl: "https://www.nbcnews.com/tech/tech-news/openai-elon-musk-case-verdict-rcna345655"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "openai", "anthropic", "google", "spacex"]
 image:
   src: "/logo.jpg"

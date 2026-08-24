@@ -4,7 +4,7 @@ summary: "GitHub facture Copilot à l'usage, Anthropic engage formellement son c
 pubDate: 2026-06-05
 source: "BuildFastWithAI"
 sourceUrl: "https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "github", "anthropic", "regulation"]
 image:
   src: "/logo.jpg"

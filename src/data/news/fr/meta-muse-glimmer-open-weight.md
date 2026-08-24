@@ -4,7 +4,7 @@ summary: "Un modèle multimodal open-weight de 30 milliards de paramètres qui t
 pubDate: 2026-08-14
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/"
-category: "ai"
+category: "newsletter"
 tags: ["veille-ia", "meta", "open-source"]
 image:
   src: "/logo.jpg"

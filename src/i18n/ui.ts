@@ -82,6 +82,9 @@ export const ui = {
     "news.category.ai": "IA",
     "news.category.industry": "Industrie",
     "news.category.academic": "Académique",
+    "news.category.newsletter": "Newsletter",
+    "news.newsletter.title": "Newsletter",
+    "news.newsletter.banner": "Voici notre newsletter publique. La version complète est envoyée par email aux membres HEC IA.",
   },
   en: {
     // Navigation
@@ -157,6 +160,9 @@ export const ui = {
     "news.category.ai": "AI",
     "news.category.industry": "Industry",
     "news.category.academic": "Academic",
+    "news.category.newsletter": "Newsletter",
+    "news.newsletter.title": "Newsletter",
+    "news.newsletter.banner": "This is our public newsletter. The full version is sent by email to HEC IA members.",
   },
 } as const
 

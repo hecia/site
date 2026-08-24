@@ -4,7 +4,7 @@ summary: "A 30-billion-parameter open-weight multimodal model that runs on a sin
 pubDate: 2026-08-14
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/"
-category: "ai"
+category: "newsletter"
 tags: ["ai-watch", "meta", "open-source"]
 image:
   src: "/logo.jpg"
