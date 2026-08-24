@@ -4,7 +4,7 @@ summary: "48 heures pour soumettre les allocations, une levée qui viserait à d
 pubDate: 2026-05-01
 source: "TechCrunch"
 sourceUrl: "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "anthropic", "openai", "levee-de-fonds"]
 image:
   src: "/logo.jpg"

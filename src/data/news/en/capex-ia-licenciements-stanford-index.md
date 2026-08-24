@@ -4,7 +4,7 @@ summary: "Microsoft commits $18B in Australia, Meta and Microsoft cut headcount,
 pubDate: 2026-04-24
 source: "Peterson Technology Partners"
 sourceUrl: "https://www.ptechpartners.com/2026/05/07/april-2026-ai-news-roundup-success-v-expense-popularity-and-code-overload/"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "microsoft", "meta", "capex", "jobs"]
 image:
   src: "/logo.jpg"

@@ -33,7 +33,7 @@ const news = defineCollection({
     pubDate: z.coerce.date(),
     source: z.string().optional(),
     sourceUrl: z.string().url().optional(),
-    category: z.enum(["association", "ai", "industry", "academic"]),
+    category: z.enum(["association", "ai", "industry", "academic", "newsletter"]),
     tags: z.array(z.string()).default([]),
     image: z
       .object({

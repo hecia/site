@@ -4,7 +4,7 @@ summary: "Astra avance sur dix problèmes ouverts depuis des décennies pour env
 pubDate: 2026-08-07
 source: "SiliconANGLE"
 sourceUrl: "https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/"
-category: "ai"
+category: "newsletter"
 tags: ["veille-ia", "openai", "google", "recherche"]
 image:
   src: "/logo.jpg"

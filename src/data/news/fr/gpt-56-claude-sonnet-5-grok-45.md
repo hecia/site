@@ -4,7 +4,7 @@ summary: "GPT-5.6, Claude Sonnet 5 et Grok 4.5 entrent en production à quelques
 pubDate: 2026-07-03
 source: "LeanVPS"
 sourceUrl: "https://leanvps.com/en/blog/articles/2026-july-ai-model-battle-gpt-56-claude-sonnet-5-grok-45-strongest-leanvps.html"
-category: "ai"
+category: "newsletter"
 tags: ["veille-ia", "openai", "anthropic", "xai"]
 image:
   src: "/logo.jpg"

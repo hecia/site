@@ -4,7 +4,7 @@ summary: "The EU forces Google to open Android to rival AI assistants, DARPA fli
 pubDate: 2026-07-17
 source: "European Commission"
 sourceUrl: "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "google", "regulation", "defense", "semiconductors"]
 image:
   src: "/logo.jpg"

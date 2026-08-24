@@ -4,7 +4,7 @@ summary: "Microsoft engage 18 milliards en Australie, Meta et Microsoft réduise
 pubDate: 2026-04-24
 source: "Peterson Technology Partners"
 sourceUrl: "https://www.ptechpartners.com/2026/05/07/april-2026-ai-news-roundup-success-v-expense-popularity-and-code-overload/"
-category: "industry"
+category: "newsletter"
 tags: ["veille-ia", "microsoft", "meta", "capex", "emploi"]
 image:
   src: "/logo.jpg"

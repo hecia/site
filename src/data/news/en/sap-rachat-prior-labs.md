@@ -4,7 +4,7 @@ summary: "SAP finalizes the acquisition of Prior Labs and commits over one billi
 pubDate: 2026-07-31
 source: "Google"
 sourceUrl: "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
-category: "industry"
+category: "newsletter"
 tags: ["ai-watch", "sap", "europe"]
 image:
   src: "/logo.jpg"
