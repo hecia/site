@@ -6,6 +6,9 @@ source: "VivaTech"
 sourceUrl: "https://vivatech.com/sessions/session/9af4bab2-3966-f111-8fcb-6045bd954326"
 category: "association"
 tags: ["vivatech", "octave-dumont", "wavestone", "enterprise-ai"]
+image:
+  src: "/logos/vivatech.png"
+  alt: "VivaTech logo"
 draft: false
 ---
 

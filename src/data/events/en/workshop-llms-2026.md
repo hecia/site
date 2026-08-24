@@ -13,4 +13,4 @@ draft: false
 
 Introductory workshop on how large language models work (ChatGPT, Gemini, Mistral...), beginner/intermediate level.
 
-HEC IA thanks its organizing members (Octave Dumont, Magloire) for this workshop.
+Thanks to all the participants for this workshop.

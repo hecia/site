@@ -19,4 +19,4 @@ Sujet : le passage du papier de recherche à la production en entreprise.
 
 Format restreint, propice aux échanges directs.
 
-HEC IA remercie NVIDIA et Mireille Fares pour cet échange, et ses membres organisateurs (Magloire, Camille Gaidier, Octave Dumont, Sara Hadjadj) pour l'avoir rendu possible.
+Merci à NVIDIA et à Mireille Fares pour cet échange.

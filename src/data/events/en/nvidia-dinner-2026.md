@@ -19,4 +19,4 @@ Topic: moving from the research paper to the enterprise floor.
 
 Small-group format, built for direct conversation.
 
-HEC IA thanks NVIDIA and Mireille Fares for the exchange, and its organizing members (Magloire, Camille Gaidier, Octave Dumont, Sara Hadjadj) for making it happen.
+Thanks to NVIDIA and Mireille Fares for the exchange.

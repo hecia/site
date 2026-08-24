@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/p6ee72sy"
 category: "association"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-hack-voodoo-x-unaite-x-anthropic.jpg"
+  alt: "Cover visual - Hack Voodoo x Unaite x Anthropic"
 draft: false
 ---
 

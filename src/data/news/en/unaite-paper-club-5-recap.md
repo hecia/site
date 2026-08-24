@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/c7vonwwb"
 category: "ai"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-paper-club-5-emmanuel-ameisen-anthropic.jpg"
+  alt: "Cover visual - Paper Club #5"
 draft: false
 ---
 

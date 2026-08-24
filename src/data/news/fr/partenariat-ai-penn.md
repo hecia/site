@@ -4,6 +4,9 @@ summary: "Colin Petit et Magloire T. Guillet (HEC IA) s'associent à Sean Lee (A
 pubDate: 2026-08-24
 category: "association"
 tags: ["partenariat", "wharton", "penn", "international"]
+image:
+  src: "/logos/wharton.png"
+  alt: "Logo The Wharton School"
 draft: false
 ---
 

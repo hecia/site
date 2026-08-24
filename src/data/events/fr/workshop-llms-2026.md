@@ -13,4 +13,4 @@ draft: false
 
 Workshop d'introduction au fonctionnement des grands modèles de langage (ChatGPT, Gemini, Mistral...), niveau débutant/intermédiaire.
 
-HEC IA remercie ses membres organisateurs (Octave Dumont, Magloire) pour cet atelier.
+Merci à tous les participants pour cet atelier.

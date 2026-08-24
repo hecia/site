@@ -13,4 +13,4 @@ draft: false
 
 Dinner organized with Mistral AI, part of HEC IA's partner dinner series.
 
-HEC IA thanks Mistral AI and its organizing members (Octave Dumont, Magloire, Camille Gaidier, Sara Hadjadj) for the exchange.
+Thanks to Mistral AI for the exchange.

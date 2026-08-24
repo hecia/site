@@ -13,4 +13,4 @@ draft: false
 
 OpenAI talk held on the HEC Paris campus.
 
-HEC IA thanks OpenAI and its organizing members (Pauline Zmiro, Magloire, Adrien Hajeri, Alban Poutier) for this event.
+Thanks to OpenAI for this event.

@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/vcj47nsm"
 category: "ai"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-paper-club-4-stephane-d-ascoli-meta-ai-brain-ai.jpg"
+  alt: "Cover visual - Paper Club #4"
 draft: false
 ---
 

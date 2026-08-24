@@ -13,4 +13,4 @@ draft: false
 
 Dîner organisé avec Mistral AI, dans le cadre du cycle de dîners partenaires HEC IA.
 
-HEC IA remercie Mistral AI et ses membres organisateurs (Octave Dumont, Magloire, Camille Gaidier, Sara Hadjadj) pour cet échange.
+Merci à Mistral AI pour cet échange.
