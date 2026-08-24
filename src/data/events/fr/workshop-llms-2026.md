@@ -6,8 +6,8 @@ location: "HEC Paris Business School, 1 Rue de la Libération, Jouy-en-Josas"
 online: false
 tags: ["workshop", "llm", "beginner"]
 image:
-  src: "/logo.jpg"
-  alt: "Logo HEC IA"
+  src: "/events/workshop-llms.jpg"
+  alt: "Workshop: Comprendre les LLMs"
 draft: false
 ---
 

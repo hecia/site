@@ -6,11 +6,11 @@ location: "Paris (lieu précis non communiqué)"
 online: false
 tags: ["cocktail", "palantir", "fde", "partenariat"]
 image:
-  src: "/logos/palantir.png"
-  alt: "Logo Palantir"
+  src: "/events/palantir-cocktail.jpg"
+  alt: "Palantir x HEC IA Cocktail : How is FDE changing the world?"
 draft: false
 ---
 
-Cocktail organisé avec Palantir sur le métier de Forward Deployed Engineer (FDE) et son impact.
+Cocktail organisé avec Palantir sur le métier de Forward Deployed Engineer (FDE) et son impact : présentation de l'entreprise, questions-réponses, networking et visite des bureaux.
 
 Merci à Palantir pour cet échange.

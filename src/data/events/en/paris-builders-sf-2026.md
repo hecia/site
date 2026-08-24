@@ -6,11 +6,11 @@ location: "San Francisco"
 online: false
 tags: ["hackathon", "san-francisco", "cross-atlantic"]
 image:
-  src: "/logo.jpg"
-  alt: "HEC IA logo"
+  src: "/events/paris-builders-sf.jpg"
+  alt: "Paris Builders in SF: Cross-Atlantic Hackathon"
 draft: false
 ---
 
-Hackathon organized in San Francisco, in connection with HEC Paris.
+24-hour hackathon in San Francisco: 10 engineering students from HEC Paris, École Polytechnique and École Normale Supérieure went up against teams from Stanford, Caltech and UC Berkeley on AI-focused projects. No slides, no theory, just building.
 
 Thanks to all the participants for this event.

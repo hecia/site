@@ -6,11 +6,11 @@ location: "Ambassade d'Auvergne, 22 Rue du Grenier-Saint-Lazare, 75003 Paris"
 online: false
 tags: ["dinner", "mistral-ai", "partnership"]
 image:
-  src: "/logos/mistral-ai.ico"
-  alt: "Mistral AI logo"
+  src: "/events/mistral-dinner.jpg"
+  alt: "Mistral AI & HEC IA - Dinner"
 draft: false
 ---
 
-Dinner organized with Mistral AI, part of HEC IA's partner dinner series.
+Dinner organized with Mistral AI, part of HEC IA's partner dinner series. Deliberately stripped-down format, no slides or presentations: three Mistral AI Forward Deployed Engineers discussed real AI deployments inside large French organizations.
 
 Thanks to Mistral AI for the exchange.
