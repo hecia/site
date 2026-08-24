@@ -1,26 +1,29 @@
 ---
-title: "Hackathon : X-HEC Paris"
+title: "X-HEC IA Hackathon 2026"
 description: "50% École Polytechnique (X) and 50% HEC Paris students will join forces to form hybrid teams for an intense 4-hour sprint."
-startDate: 2026-03-25T18:30:00
-endDate: 2026-03-25T21:30:00
-location: "HEC Paris Campus"
-online: true
-registrationUrl: "https://forms.gle/example-conference"
-capacity: 200
+startDate: 2026-03-11T18:00:00
+location: "HEC Paris Business School, 1 Rue de la Libération, Jouy-en-Josas"
+online: false
+registrationUrl: "https://luma.com/pmmmyml4"
 tags: ["hackathon", "x-hec", "build"]
+image:
+  src: "/events/hackathon-x-hec-2026.jpg"
+  alt: "Cover visual of the X-HEC IA Hackathon 2026"
 draft: false
 ---
 
-# 🚀 X-HEC AI Hackathon 2026
+# 🚀 X-HEC IA Hackathon 2026
 
-​50% École Polytechnique (X) and 50% HEC Paris students will join forces to form hybrid teams for an intense 4-hour sprint.
+​50% École Polytechnique (X) and 50% HEC Paris students join forces to form hybrid teams for an intense 4-hour sprint.
 
-​Their mission? To build and pitch a functional AI startup prototype from scratch.
+​Their mission: build and pitch a functional AI startup prototype in under 4 hours.
 
 ## ​Key Highlights
 
-​• Multidisciplinary Teams: Bridging the gap between deep engineering and business strategy.
+​• Multidisciplinary teams: bridging deep engineering and business strategy.
 
-​• The Challenge: Rapid prototyping and business modeling in under 4 hours.
+​• The challenge: rapid prototyping and business modeling in under 4 hours.
 
-​• Themes: To be announced soon.
+​• Themes announced on the day.
+
+HEC IA is proud to have co-organized this hackathon with École Polytechnique and its members.
