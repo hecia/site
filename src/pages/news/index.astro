@@ -34,7 +34,14 @@ const news = filterByLocale(allNews, lang).sort(
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {news.map(item => (
-        <Card className="flex flex-col h-full border-border/50 hover:border-accent-yellow/50 transition-colors">
+        <Card className="flex flex-col h-full border-border/50 hover:border-accent-yellow/50 transition-colors overflow-hidden">
+          {item.data.image && (
+            <img
+              src={item.data.image.src}
+              alt={item.data.image.alt}
+              class="w-full h-40 object-cover"
+            />
+          )}
           <CardHeader>
             <div class="flex items-center gap-2 mb-2">
               <Badge variant="outline" className="text-[10px] uppercase tracking-wider">

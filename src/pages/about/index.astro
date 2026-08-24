@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/main.astro"
+import {
+  getLangFromUrl,
+  useTranslations,
+  tDynamic,
+} from "@/i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const members = [
+  { name: "Magloire Guillet", roleKey: "bureau.role.coPresident", initials: "MG", image: "/members/magloire-guillet.jpeg", linkedin: "https://www.linkedin.com/in/magloire-t-guillet-64618b177/" },
+  { name: "Alexandre Houard", roleKey: "bureau.role.coPresident", initials: "AH", image: "/members/alexandre-houard.jpeg", linkedin: "https://www.linkedin.com/in/alexandre-houard-686960279/" },
+  { name: "Alban Poutier", roleKey: "bureau.role.secretaryGeneral", initials: "AP", image: "/members/alban-poutier.jpeg", linkedin: "https://www.linkedin.com/in/alban-hm-poutier/" },
+  { name: "Pauline Zmiro", roleKey: "bureau.role.treasurer", initials: "SB", image: "/members/pauline-zmiro.jpeg", linkedin: "https://www.linkedin.com/in/pauline-zmiro/" },
+  { name: "Octave Dumont", roleKey: "bureau.role.vicePresident", initials: "OD", image: "/members/octave-dumont.jpeg", linkedin: "https://www.linkedin.com/in/octave-dumont/" },
+]
+---
+
+<Layout title={t("about.pageTitle")} description={t("about.description")}>
+  <div class="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div class="max-w-3xl mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">{t("about.title")}</h1>
+      <p class="text-xl text-muted-foreground">
+        {t("about.subtitle")}
+      </p>
+    </div>
+
+    <section id="bureau">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">{t("about.bureau.title")}</h2>
+        <p class="text-muted-foreground max-w-xl mx-auto">{t("about.bureau.subtitle")}</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        {members.map(member => (
+          <a href={member.linkedin}>
+          <div class="flex flex-col items-center text-center gap-4">
+            <div class="relative group">
+              <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-primary/10 border-2 border-border overflow-hidden group-hover:border-primary/50 transition-colors">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  class="w-full h-full object-cover"
+                  onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
+                />
+                <span class="text-3xl font-bold text-primary w-full h-full items-center justify-center hidden">{member.initials}</span>
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold text-base leading-tight">{member.name}</p>
+              <p class="text-sm text-muted-foreground mt-1">{tDynamic(lang, member.roleKey)}</p>
+            </div>
+          </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</Layout>

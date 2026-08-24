@@ -26,6 +26,13 @@ const t = useTranslations(lang)
 
 <Layout title={`${entry.data.title} | ${t("news.title")} HEC IA`} description={entry.data.summary}>
   <article class="container mx-auto px-4 md:px-8 py-12 md:py-20 max-w-4xl">
+    {entry.data.image && (
+      <img
+        src={entry.data.image.src}
+        alt={entry.data.image.alt}
+        class="w-full max-h-[420px] object-cover rounded-xl mb-8"
+      />
+    )}
     <div class="mb-12">
       <div class="flex items-center gap-4 mb-6">
         <Badge variant="outline" className="uppercase tracking-wider">

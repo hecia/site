@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import HeroTitle from "@/components/HeroTitle"
 import { getCollection } from "astro:content"
@@ -26,31 +26,20 @@ const upcomingEvents = localeEvents
   .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf())
   .slice(0, 3)
 
-const allProjects = await getCollection("projects", ({ data }) => !data.draft)
-const localeProjects = filterByLocale(allProjects, lang)
-const featuredProjects = localeProjects
-  .filter(p => p.data.featured)
-  .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
-  .slice(0, 3)
-
-const allBlog = await getCollection("blog", ({ data }) => !data.draft)
-const localeBlog = filterByLocale(allBlog, lang)
-const recentBlog = localeBlog
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3)
-
 const allNews = await getCollection("news", ({ data }) => !data.draft)
 const localeNews = filterByLocale(allNews, lang)
 const recentNews = localeNews
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3)
 
-const members = [
-  { name: "Magloire Guillet", roleKey: "bureau.role.coPresident", initials: "MG", image: "/members/magloire-guillet.jpeg",linkedin:"https://www.linkedin.com/in/magloire-t-guillet-64618b177/" },
-  { name: "Alexandre Houard", roleKey: "bureau.role.coPresident", initials: "AH", image: "/members/alexandre-houard.jpeg",linkedin:"https://www.linkedin.com/in/alexandre-houard-686960279/" },
-  { name: "Alban Poutier", roleKey: "bureau.role.secretaryGeneral", initials: "AP", image: "/members/alban-poutier.jpeg",linkedin:"https://www.linkedin.com/in/alban-hm-poutier/" },
-  { name: "Pauline Zmiro", roleKey: "bureau.role.treasurer", initials: "SB", image: "/members/pauline-zmiro.jpeg",linkedin:"https://www.linkedin.com/in/pauline-zmiro/" },
-  { name: "Octave Dumont", roleKey: "bureau.role.vicePresident", initials: "OD", image: "/members/octave-dumont.jpeg",linkedin:"https://www.linkedin.com/in/octave-dumont/" },
+const eventPartners = [
+  { name: "NVIDIA", logo: "/logos/nvidia.svg" },
+  { name: "Anthropic", logo: "/logos/anthropic.png" },
+  { name: "Google", logo: "/logos/google.png" },
+  { name: "Mistral AI", logo: "/logos/mistral-ai.ico" },
+  { name: "Palantir", logo: "/logos/palantir.png" },
+  { name: "OpenAI", logo: "/logos/openai.svg" },
+  { name: "Comand AI", logo: "/logos/comand-ai.png" },
 ]
 ---
 
@@ -68,7 +57,7 @@ const members = [
             <a href={translatePath("/events")}>{t("home.hero.cta.events")}</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto rounded-full px-8">
-            <a href={translatePath("/projects")}>{t("home.hero.cta.projects")}</a>
+            <a href={translatePath("/news")}>{t("home.hero.cta.news")}</a>
           </Button>
         </div>
       </div>
@@ -77,34 +66,21 @@ const members = [
     <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-cyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
   </section>
 
-  <!-- Le Bureau -->
-  <section class="py-16 md:py-24 snap-start" id="bureau">
-    <div class="container mx-auto px-4 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">{t("home.bureau.title")}</h2>
-        <p class="text-muted-foreground max-w-xl mx-auto">{t("home.bureau.subtitle")}</p>
-      </div>
-      <div class="flex flex-wrap justify-center gap-8">
-        {members.map(member => (
-          <a href={member.linkedin}>
-          <div class="flex flex-col items-center text-center gap-4">
-            <div class="relative group">
-              <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-primary/10 border-2 border-border overflow-hidden group-hover:border-primary/50 transition-colors">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  class="w-full h-full object-cover"
-                  onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
-                />
-                <span class="text-3xl font-bold text-primary w-full h-full items-center justify-center hidden">{member.initials}</span>
-              </div>
-            </div>
-            <div>
-              <p class="font-semibold text-base leading-tight">{member.name}</p>
-              <p class="text-sm text-muted-foreground mt-1">{tDynamic(lang, member.roleKey)}</p>
-            </div>
-          </div>
-          </a>
+  <!-- Ils ont organisé un événement avec nous -->
+  <section class="py-16 md:py-20 snap-start border-y border-border/40 bg-muted/20">
+    <div class="container mx-auto px-4 md:px-8 mb-10 text-center">
+      <h2 class="text-2xl font-bold tracking-tight mb-2">{t("home.eventPartners.title")}</h2>
+      <p class="text-muted-foreground max-w-xl mx-auto">{t("home.eventPartners.subtitle")}</p>
+    </div>
+    <div class="logo-marquee-mask relative overflow-hidden">
+      <div class="logo-marquee flex items-center gap-16 w-max">
+        {[...eventPartners, ...eventPartners].map(partner => (
+          <img
+            src={partner.logo}
+            alt={partner.name}
+            title={partner.name}
+            class="h-9 md:h-10 w-auto object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all shrink-0"
+          />
         ))}
       </div>
     </div>
@@ -150,106 +126,31 @@ const members = [
     </section>
   )}
 
-  <!-- Projets -->
-  {featuredProjects.length > 0 && (
-    <section class="py-16 md:py-24 snap-start">
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-center justify-between mb-10">
-          <h2 class="text-3xl font-bold tracking-tight">{t("home.projects.title")}</h2>
-          <a href={translatePath("/projects")} class="text-sm font-medium text-primary hover:underline">
-            {t("home.projects.seeAll")} &rarr;
-          </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map(project => (
-            <Card className="flex flex-col h-full border-border/50 hover:border-accent-orange/50 transition-colors">
-              <CardHeader>
-                <div class="flex justify-between items-start mb-2">
-                  <Badge variant={project.data.status === 'active' ? 'default' : 'secondary'}>
-                    {project.data.status === "active"
-                      ? t("projects.status.active")
-                      : project.data.status === "completed"
-                        ? t("projects.status.completed")
-                        : t("projects.status.archived")}
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl line-clamp-2">
-                  <a
-                    href={`${translatePath("/projects")}/${getSlugFromId(project.id)}`}
-                    class="hover:text-accent-orange transition-colors"
-                  >
-                    {project.data.title}
-                  </a>
-                </CardTitle>
-                <CardDescription className="line-clamp-3">{project.data.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <div class="flex flex-wrap gap-2">
-                  {project.data.technologies.slice(0, 3).map(tech => (
-                    <Badge variant="outline" className="text-xs">{tech}</Badge>
-                  ))}
-                  {project.data.technologies.length > 3 && (
-                    <Badge variant="outline" className="text-xs">+{project.data.technologies.length - 3}</Badge>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Blog + News -->
+  <!-- Actualités -->
   <section class="py-16 md:py-24 bg-muted/30 snap-start">
     <div class="container mx-auto px-4 md:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <h2 class="text-2xl font-bold tracking-tight">{t("home.blog.title")}</h2>
-            <a href={translatePath("/blog")} class="text-sm font-medium text-primary hover:underline">
-              {t("home.blog.seeAll")} &rarr;
-            </a>
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="text-3xl font-bold tracking-tight">{t("home.news.title")}</h2>
+        <a href={translatePath("/news")} class="text-sm font-medium text-primary hover:underline">
+          {t("home.news.seeAll")} &rarr;
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentNews.map(item => (
+          <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
+            <div class="flex items-center gap-2">
+              <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
+                {tDynamic(lang, `news.category.${item.data.category}`)}
+              </Badge>
+              <span class="text-xs text-muted-foreground">
+                {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
+              </span>
+            </div>
+            <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
+              <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
+            </h3>
           </div>
-          <div class="space-y-6">
-            {recentBlog.map(post => (
-              <div class="group flex flex-col gap-2">
-                <p class="text-sm text-muted-foreground">
-                  {post.data.pubDate.toLocaleDateString(getDateLocale(lang), { year: 'numeric', month: 'long', day: 'numeric' })}
-                </p>
-                <h3 class="text-lg font-semibold leading-tight group-hover:text-primary transition-colors">
-                  <a href={`${translatePath("/blog")}/${getSlugFromId(post.id)}`}>{post.data.title}</a>
-                </h3>
-                <p class="text-sm text-muted-foreground line-clamp-2">{post.data.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <h2 class="text-2xl font-bold tracking-tight">{t("home.news.title")}</h2>
-            <a href={translatePath("/news")} class="text-sm font-medium text-primary hover:underline">
-              {t("home.news.seeAll")} &rarr;
-            </a>
-          </div>
-          <div class="space-y-6">
-            {recentNews.map(item => (
-              <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
-                <div class="flex items-center gap-2">
-                  <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
-                    {tDynamic(lang, `news.category.${item.data.category}`)}
-                  </Badge>
-                  <span class="text-xs text-muted-foreground">
-                    {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
-                  </span>
-                </div>
-                <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
-                  <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   </section>
@@ -286,6 +187,26 @@ const members = [
     </div>
   </section>
 </Layout>
+
+<style>
+  .logo-marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .logo-marquee {
+    animation: logo-marquee-scroll 28s linear infinite;
+  }
+  .logo-marquee-mask:hover .logo-marquee {
+    animation-play-state: paused;
+  }
+  @keyframes logo-marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .logo-marquee { animation: none; }
+  }
+</style>
 
 <script is:inline>
   (function() {

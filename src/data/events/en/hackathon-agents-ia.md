@@ -1,13 +1,16 @@
 ---
 title: "Workshop - Build your own ChatGPT"
 description: "Build your own ChatGPT Workshop"
-startDate: 2026-03-05T18:00:00
-endDate: 2026-03-05T19:30:00
-location: "T303, Campus HEC Paris, Jouy-en-Josas"
+startDate: 2026-03-04T18:00:00
+endDate: 2026-03-04T19:30:00
+location: "T303, HEC Paris Business School, 1 Rue de la Libération, Jouy-en-Josas"
 online: false
 registrationUrl: "https://luma.com/ahqjeojl"
 capacity: 65
 tags: ["workshop","ovhcloud" , "openwebui", "llm" ]
+image:
+  src: "/events/workshop-chatgpt.jpg"
+  alt: "Cover visual of the Build your own ChatGPT workshop hosted by HEC IA"
 draft: false
 ---
 
