@@ -26,4 +26,6 @@ draft: false
 
 ​• Thèmes annoncés le jour J.
 
+Organisé par HEC IA et Binet Artificial Intelligence (École Polytechnique), avec ElevenLabs (voix IA) et Lovable (prototypage produit) comme partenaires outils pour équiper les hackers pendant le sprint.
+
 HEC IA est fier d'avoir co-organisé ce hackathon avec l'X et ses membres.
