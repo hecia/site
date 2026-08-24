@@ -3,7 +3,7 @@ title: "HEC x Unaite : GTM Workshop | Hexa x Ignaite"
 description: "HEC x Unaite : GTM Workshop | Hexa x Ignaite"
 startDate: 2025-06-03T18:00:00
 endDate: 2025-06-03T20:00:00
-location: "Paris, Île-de-France"
+location: "Exact address shared upon registration (Paris)"
 online: false
 registrationUrl: "https://luma.com/zrwr0dle"
 tags: ["unaite"]
