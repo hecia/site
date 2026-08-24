@@ -16,6 +16,7 @@ export interface MobileNavProps {
 const MobileNav: React.FC<MobileNavProps> = ({ links: propLinks }) => {
   const links = propLinks || [
     { href: "/", label: "Accueil" },
+    { href: "/about", label: "Qui sommes-nous" },
     { href: "/events", label: "Événements" },
     { href: "/news", label: "Actualités" },
   ]

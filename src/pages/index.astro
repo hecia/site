@@ -32,12 +32,14 @@ const recentNews = localeNews
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3)
 
-const members = [
-  { name: "Magloire Guillet", roleKey: "bureau.role.coPresident", initials: "MG", image: "/members/magloire-guillet.jpeg",linkedin:"https://www.linkedin.com/in/magloire-t-guillet-64618b177/" },
-  { name: "Alexandre Houard", roleKey: "bureau.role.coPresident", initials: "AH", image: "/members/alexandre-houard.jpeg",linkedin:"https://www.linkedin.com/in/alexandre-houard-686960279/" },
-  { name: "Alban Poutier", roleKey: "bureau.role.secretaryGeneral", initials: "AP", image: "/members/alban-poutier.jpeg",linkedin:"https://www.linkedin.com/in/alban-hm-poutier/" },
-  { name: "Pauline Zmiro", roleKey: "bureau.role.treasurer", initials: "SB", image: "/members/pauline-zmiro.jpeg",linkedin:"https://www.linkedin.com/in/pauline-zmiro/" },
-  { name: "Octave Dumont", roleKey: "bureau.role.vicePresident", initials: "OD", image: "/members/octave-dumont.jpeg",linkedin:"https://www.linkedin.com/in/octave-dumont/" },
+const eventPartners = [
+  { name: "NVIDIA", logo: "/logos/nvidia.svg" },
+  { name: "Anthropic", logo: "/logos/anthropic.png" },
+  { name: "Google", logo: "/logos/google.png" },
+  { name: "Mistral AI", logo: "/logos/mistral-ai.ico" },
+  { name: "Palantir", logo: "/logos/palantir.png" },
+  { name: "OpenAI", logo: "/logos/openai.svg" },
+  { name: "Comand AI", logo: "/logos/comand-ai.png" },
 ]
 ---
 
@@ -64,34 +66,21 @@ const members = [
     <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-cyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
   </section>
 
-  <!-- Le Bureau -->
-  <section class="py-16 md:py-24 snap-start" id="bureau">
-    <div class="container mx-auto px-4 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">{t("home.bureau.title")}</h2>
-        <p class="text-muted-foreground max-w-xl mx-auto">{t("home.bureau.subtitle")}</p>
-      </div>
-      <div class="flex flex-wrap justify-center gap-8">
-        {members.map(member => (
-          <a href={member.linkedin}>
-          <div class="flex flex-col items-center text-center gap-4">
-            <div class="relative group">
-              <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-primary/10 border-2 border-border overflow-hidden group-hover:border-primary/50 transition-colors">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  class="w-full h-full object-cover"
-                  onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
-                />
-                <span class="text-3xl font-bold text-primary w-full h-full items-center justify-center hidden">{member.initials}</span>
-              </div>
-            </div>
-            <div>
-              <p class="font-semibold text-base leading-tight">{member.name}</p>
-              <p class="text-sm text-muted-foreground mt-1">{tDynamic(lang, member.roleKey)}</p>
-            </div>
-          </div>
-          </a>
+  <!-- Ils ont organisé un événement avec nous -->
+  <section class="py-16 md:py-20 snap-start border-y border-border/40 bg-muted/20">
+    <div class="container mx-auto px-4 md:px-8 mb-10 text-center">
+      <h2 class="text-2xl font-bold tracking-tight mb-2">{t("home.eventPartners.title")}</h2>
+      <p class="text-muted-foreground max-w-xl mx-auto">{t("home.eventPartners.subtitle")}</p>
+    </div>
+    <div class="logo-marquee-mask relative overflow-hidden">
+      <div class="logo-marquee flex items-center gap-16 w-max">
+        {[...eventPartners, ...eventPartners].map(partner => (
+          <img
+            src={partner.logo}
+            alt={partner.name}
+            title={partner.name}
+            class="h-9 md:h-10 w-auto object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all shrink-0"
+          />
         ))}
       </div>
     </div>
@@ -198,6 +187,26 @@ const members = [
     </div>
   </section>
 </Layout>
+
+<style>
+  .logo-marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .logo-marquee {
+    animation: logo-marquee-scroll 28s linear infinite;
+  }
+  .logo-marquee-mask:hover .logo-marquee {
+    animation-play-state: paused;
+  }
+  @keyframes logo-marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .logo-marquee { animation: none; }
+  }
+</style>
 
 <script is:inline>
   (function() {

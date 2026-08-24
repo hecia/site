@@ -10,6 +10,7 @@ export const ui = {
   fr: {
     // Navigation
     "nav.home": "Accueil",
+    "nav.about": "Qui sommes-nous",
     "nav.events": "\u00c9v\u00e9nements",
     "nav.news": "Actualit\u00e9s",
     "nav.menu": "Menu",
@@ -28,23 +29,32 @@ export const ui = {
     "home.hero.cta.news": "Nos Actualit\u00e9s",
     "home.hero.suffix": "\u00e0",
 
-    // Home - Bureau
-    "home.bureau.title": "Le Bureau",
-    "home.bureau.subtitle":
-      "Les membres qui font vivre l'association au quotidien.",
-    "bureau.role.coPresident": "Co-Président",
-    "bureau.role.secretaryGeneral": "Secrétaire Général",
-    "bureau.role.treasurer": "Trésorière",
-    "bureau.role.vicePresident": "Vice-Président : HEC IA Intelligence",
-
     // Home - Sections
     "home.events.title": "\u00c9v\u00e9nements \u00e0 venir",
     "home.events.seeAll": "Voir tout",
     "home.news.title": "Actualit\u00e9s",
     "home.news.seeAll": "Voir tout",
+    "home.eventPartners.title": "Ils ont organisé un événement avec nous",
+    "home.eventPartners.subtitle":
+      "Des entreprises avec qui nos membres ont organisé un dîner, un talk ou un hackathon.",
     "home.join.title": "Rejoignez-nous",
     "home.join.subtitle":
       "Suivez nos activit\u00e9s et rejoignez la communaut\u00e9 HEC IA.",
+
+    // About page
+    "about.title": "Qui sommes-nous",
+    "about.pageTitle": "Qui sommes-nous | HEC IA",
+    "about.description":
+      "L'association étudiante de HEC Paris dédiée à l'intelligence artificielle, et les membres qui la font vivre.",
+    "about.subtitle":
+      "L'association étudiante de HEC Paris dédiée à la démocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.",
+    "about.bureau.title": "Le Bureau",
+    "about.bureau.subtitle":
+      "Les membres qui font vivre l'association au quotidien.",
+    "bureau.role.coPresident": "Co-Président",
+    "bureau.role.secretaryGeneral": "Secrétaire Général",
+    "bureau.role.treasurer": "Trésorière",
+    "bureau.role.vicePresident": "Vice-Président : HEC IA Intelligence",
 
     // Events page
     "events.title": "\u00c9v\u00e9nements",
@@ -76,6 +86,7 @@ export const ui = {
   en: {
     // Navigation
     "nav.home": "Home",
+    "nav.about": "About",
     "nav.events": "Events",
     "nav.news": "News",
     "nav.menu": "Menu",
@@ -94,23 +105,32 @@ export const ui = {
     "home.hero.cta.news": "Our News",
     "home.hero.suffix": "at",
 
-    // Home - Bureau
-    "home.bureau.title": "The Board",
-    "home.bureau.subtitle":
-      "The members who bring the association to life every day.",
-    "bureau.role.coPresident": "Co-President",
-    "bureau.role.secretaryGeneral": "Secretary General",
-    "bureau.role.treasurer": "Treasurer",
-    "bureau.role.vicePresident": "Vice-President: HEC IA Intelligence",
-
     // Home - Sections
     "home.events.title": "Upcoming Events",
     "home.events.seeAll": "See all",
     "home.news.title": "News",
     "home.news.seeAll": "See all",
+    "home.eventPartners.title": "They've hosted an event with us",
+    "home.eventPartners.subtitle":
+      "Companies our members have organized a dinner, talk or hackathon with.",
     "home.join.title": "Join Us",
     "home.join.subtitle":
       "Follow our activities and join the HEC IA community.",
+
+    // About page
+    "about.title": "About us",
+    "about.pageTitle": "About us | HEC IA",
+    "about.description":
+      "The HEC Paris student association dedicated to artificial intelligence, and the members who bring it to life.",
+    "about.subtitle":
+      "The HEC Paris student association dedicated to democratizing, learning and applying AI in the business world.",
+    "about.bureau.title": "The Board",
+    "about.bureau.subtitle":
+      "The members who bring the association to life every day.",
+    "bureau.role.coPresident": "Co-President",
+    "bureau.role.secretaryGeneral": "Secretary General",
+    "bureau.role.treasurer": "Treasurer",
+    "bureau.role.vicePresident": "Vice-President: HEC IA Intelligence",
 
     // Events page
     "events.title": "Events",
