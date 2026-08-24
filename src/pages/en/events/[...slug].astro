@@ -22,10 +22,24 @@ const { entry } = Astro.props
 const { Content } = await render(entry)
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const isLogo = entry.data.image && (entry.data.image.src.startsWith("/logos/") || entry.data.image.src === "/logo.jpg")
 ---
 
 <Layout title={`${entry.data.title} | ${t("events.title")} HEC IA`} description={entry.data.description}>
   <article class="container mx-auto px-4 md:px-8 py-12 md:py-20 max-w-4xl">
+    {entry.data.image && (
+      isLogo ? (
+        <div class="w-full h-56 md:h-64 bg-white rounded-xl mb-8 flex items-center justify-center p-10">
+          <img src={entry.data.image.src} alt={entry.data.image.alt} class="max-h-full max-w-full object-contain" />
+        </div>
+      ) : (
+        <img
+          src={entry.data.image.src}
+          alt={entry.data.image.alt}
+          class="w-full max-h-[420px] object-cover rounded-xl mb-8"
+        />
+      )
+    )}
     <div class="mb-12">
       <div class="flex flex-wrap items-center gap-4 mb-6">
         <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 text-sm py-1 px-3">

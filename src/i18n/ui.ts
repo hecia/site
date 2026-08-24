@@ -34,9 +34,9 @@ export const ui = {
     "home.events.seeAll": "Voir tout",
     "home.news.title": "Actualit\u00e9s",
     "home.news.seeAll": "Voir tout",
-    "home.eventPartners.title": "Ils ont organisé un événement avec nous",
+    "home.eventPartners.title": "Présents à nos événements",
     "home.eventPartners.subtitle":
-      "Des entreprises avec qui nos membres ont organisé un dîner, un talk ou un hackathon.",
+      "Des entreprises qui ont pris part à un dîner, un talk ou un hackathon avec HEC IA.",
     "home.join.title": "Rejoignez-nous",
     "home.join.subtitle":
       "Suivez nos activit\u00e9s et rejoignez la communaut\u00e9 HEC IA.",
@@ -48,7 +48,7 @@ export const ui = {
       "L'association étudiante de HEC Paris dédiée à l'intelligence artificielle, et les membres qui la font vivre.",
     "about.subtitle":
       "L'association étudiante de HEC Paris dédiée à la démocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.",
-    "about.bureau.title": "Le Bureau",
+    "about.bureau.title": "Bureau 2025-2026",
     "about.bureau.subtitle":
       "Les membres qui font vivre l'association au quotidien.",
     "bureau.role.coPresident": "Co-Président",
@@ -110,9 +110,9 @@ export const ui = {
     "home.events.seeAll": "See all",
     "home.news.title": "News",
     "home.news.seeAll": "See all",
-    "home.eventPartners.title": "They've hosted an event with us",
+    "home.eventPartners.title": "Featured at our events",
     "home.eventPartners.subtitle":
-      "Companies our members have organized a dinner, talk or hackathon with.",
+      "Companies that have taken part in a dinner, talk or hackathon with HEC IA.",
     "home.join.title": "Join Us",
     "home.join.subtitle":
       "Follow our activities and join the HEC IA community.",
@@ -124,7 +124,7 @@ export const ui = {
       "The HEC Paris student association dedicated to artificial intelligence, and the members who bring it to life.",
     "about.subtitle":
       "The HEC Paris student association dedicated to democratizing, learning and applying AI in the business world.",
-    "about.bureau.title": "The Board",
+    "about.bureau.title": "Board 2025-2026",
     "about.bureau.subtitle":
       "The members who bring the association to life every day.",
     "bureau.role.coPresident": "Co-President",
