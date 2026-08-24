@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+48 heures de build sur l'IA physique à Station F, pendant GOSIM Paris 2026. 10 équipes travaillent avec OpenArm, un bras robotique humanoïde à 7 degrés de liberté, sur des défis de manipulation (préhension, tri, manipulation de tissu). Écosystème logiciel : LeRobot, dora-rs, ROS2, MuJoCo, Isaac Lab. Partenaires : GOSIM, Station F, OpenArm.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/11cjioey

@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Quentin Garrido (Meta FAIR) sur les modèles de monde et l'apprentissage d'espace latent à partir de vidéo : V-JEPA 2, compréhension intuitive de la physique par pré-entraînement auto-supervisé, et modèles de monde à action latente pour la robotique et la planification.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/ogsue1g1

@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Portes ouvertes de la fellowship IA x biologie d'Unaite : cohorte parisienne inaugurale de 20 scientifiques, ingénieurs et builders, mentorée par des chercheurs de l'Institut Pasteur, de Gustave Roussy, de FAIR (Meta) et de l'ENS. Programme : mentorat, paper clubs, hackathons, recherche collaborative.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/d027eojb

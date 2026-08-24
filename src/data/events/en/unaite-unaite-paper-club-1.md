@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Hugo Touvron (Llama team, Meta FAIR) traces the path from the original Llama paper to Llama 4: architecture choices, training strategies, and the discovery process behind this open-weights language model.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/clcszco4

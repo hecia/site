@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+François Chollet (creator of Keras and ARC-AGI) joins via video call. Mathïs Federico (Automatants, CentraleSupélec) presents his work on ARC-AGI. Central theme: the limits of pure transformer scaling for learning new skills the way humans do.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/2cdo8hgu

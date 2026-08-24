@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Atelier sur la levée de fonds organisé avec Kima Ventures et Ignaite.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/7vaqmo9x

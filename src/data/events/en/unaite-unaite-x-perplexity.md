@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Fireside chat with Aravind Srinivas, CEO of Perplexity AI (PhD from UC Berkeley, former researcher at OpenAI, Google and DeepMind). Perplexity: an AI search engine backed by IVP, SoftBank, Nvidia and Jeff Bezos, having recently raised $500M at a $9B valuation.
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/uan55g3p

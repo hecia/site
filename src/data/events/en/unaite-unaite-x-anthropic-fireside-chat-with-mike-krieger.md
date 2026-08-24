@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Fireside chat with Mike Krieger, Chief Product Officer at Anthropic and co-founder of Instagram, moderated by Benoit Dubief (Anthropic, EMEA Startup Partnerships).
+
 Event organized as part of Unaite, the student federation uniting France's leading AI student associations, of which HEC IA is a member.
 
 Details and speakers on the event's Luma page: https://luma.com/hbxebi6c

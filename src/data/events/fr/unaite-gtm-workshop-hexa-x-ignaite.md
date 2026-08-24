@@ -13,6 +13,8 @@ image:
 draft: false
 ---
 
+Atelier go-to-market organisé avec Hexa et Ignaite.
+
 Événement organisé dans le cadre d'Unaite, la fédération étudiante réunissant les principales associations IA en France, dont HEC IA est membre.
 
 Détails et intervenants sur la page Luma de l'événement : https://luma.com/zrwr0dle
