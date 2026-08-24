@@ -33,13 +33,13 @@ const recentNews = localeNews
   .slice(0, 3)
 
 const eventPartners = [
-  { name: "NVIDIA", logo: "/logos/nvidia.svg" },
-  { name: "Anthropic", logo: "/logos/anthropic.png" },
-  { name: "Google", logo: "/logos/google.png" },
-  { name: "Mistral AI", logo: "/logos/mistral-ai.ico" },
-  { name: "Palantir", logo: "/logos/palantir.png" },
-  { name: "OpenAI", logo: "/logos/openai.svg" },
-  { name: "Comand AI", logo: "/logos/comand-ai.png" },
+  { name: "NVIDIA", logo: "/logos/nvidia.svg", url: "https://www.nvidia.com" },
+  { name: "Anthropic", logo: "/logos/anthropic.png", url: "https://www.anthropic.com" },
+  { name: "Google", logo: "/logos/google.png", url: "https://ai.google" },
+  { name: "Mistral AI", logo: "/logos/mistral-ai.ico", url: "https://mistral.ai" },
+  { name: "Palantir", logo: "/logos/palantir.png", url: "https://www.palantir.com" },
+  { name: "OpenAI", logo: "/logos/openai.svg", url: "https://openai.com" },
+  { name: "Comand AI", logo: "/logos/comand-ai.png", url: "https://www.comand.ai" },
 ]
 ---
 
@@ -75,14 +75,19 @@ const eventPartners = [
     <div class="logo-marquee-mask relative overflow-hidden">
       <div class="logo-marquee flex items-center gap-6 w-max">
         {[...eventPartners, ...eventPartners].map(partner => (
-          <div class="bg-white rounded-xl px-6 py-3 shrink-0 flex items-center justify-center shadow-sm">
+          <a
+            href={partner.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-white rounded-xl px-6 py-3 shrink-0 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"
+          >
             <img
               src={partner.logo}
               alt={partner.name}
               title={partner.name}
               class="h-7 md:h-8 w-auto max-w-[120px] object-contain"
             />
-          </div>
+          </a>
         ))}
       </div>
     </div>
