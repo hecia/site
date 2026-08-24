@@ -51,6 +51,8 @@ export const ui = {
     "about.bureau.title": "Bureau 2025-2026",
     "about.bureau.subtitle":
       "Les membres qui font vivre l'association au quotidien.",
+    "about.bureauNext.title": "Bureau 2026-2027",
+    "about.bureauNext.comingSoon": "Coming soon",
     "bureau.role.coPresident": "Co-Président",
     "bureau.role.secretaryGeneral": "Secrétaire Général",
     "bureau.role.treasurer": "Trésorière",
@@ -127,6 +129,8 @@ export const ui = {
     "about.bureau.title": "Board 2025-2026",
     "about.bureau.subtitle":
       "The members who bring the association to life every day.",
+    "about.bureauNext.title": "Board 2026-2027",
+    "about.bureauNext.comingSoon": "Coming soon",
     "bureau.role.coPresident": "Co-President",
     "bureau.role.secretaryGeneral": "Secretary General",
     "bureau.role.treasurer": "Treasurer",
