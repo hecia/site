@@ -11,10 +11,7 @@ export const ui = {
     // Navigation
     "nav.home": "Accueil",
     "nav.events": "\u00c9v\u00e9nements",
-    "nav.projects": "Projets",
-    "nav.blog": "Blog",
     "nav.news": "Actualit\u00e9s",
-    "nav.gallery": "Galerie",
     "nav.menu": "Menu",
 
     // Layout
@@ -28,7 +25,7 @@ export const ui = {
     "home.hero.subtitle":
       "Nous sommes l'association \u00e9tudiante d\u00e9di\u00e9e \u00e0 la d\u00e9mocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.",
     "home.hero.cta.events": "Nos \u00c9v\u00e9nements",
-    "home.hero.cta.projects": "D\u00e9couvrir nos Projets",
+    "home.hero.cta.news": "Nos Actualit\u00e9s",
     "home.hero.suffix": "\u00e0",
 
     // Home - Bureau
@@ -43,10 +40,6 @@ export const ui = {
     // Home - Sections
     "home.events.title": "\u00c9v\u00e9nements \u00e0 venir",
     "home.events.seeAll": "Voir tout",
-    "home.projects.title": "Projets en vedette",
-    "home.projects.seeAll": "Voir tout",
-    "home.blog.title": "Derniers articles",
-    "home.blog.seeAll": "Voir tout",
     "home.news.title": "Actualit\u00e9s",
     "home.news.seeAll": "Voir tout",
     "home.join.title": "Rejoignez-nous",
@@ -67,30 +60,6 @@ export const ui = {
     "events.online": "En ligne",
     "events.register": "S'inscrire \u00e0 l'\u00e9v\u00e9nement",
 
-    // Projects page
-    "projects.title": "Projets",
-    "projects.pageTitle": "Projets | HEC IA",
-    "projects.description":
-      "D\u00e9couvrez les projets d'intelligence artificielle r\u00e9alis\u00e9s par les membres de HEC IA.",
-    "projects.subtitle":
-      "D\u00e9couvrez les initiatives et projets techniques r\u00e9alis\u00e9s par nos membres.",
-    "projects.status.active": "En cours",
-    "projects.status.completed": "Termin\u00e9",
-    "projects.status.archived": "Archiv\u00e9",
-    "projects.startedOn": "D\u00e9marr\u00e9 le",
-    "projects.team": "\u00c9quipe",
-    "projects.sourceCode": "Code Source",
-    "projects.viewDemo": "Voir la D\u00e9mo",
-
-    // Blog page
-    "blog.title": "Blog",
-    "blog.pageTitle": "Blog | HEC IA",
-    "blog.description":
-      "Articles et r\u00e9flexions sur l'intelligence artificielle par les membres de HEC IA.",
-    "blog.subtitle":
-      "Articles, tutoriels et r\u00e9flexions sur l'intelligence artificielle par notre communaut\u00e9.",
-    "blog.by": "Par",
-
     // News page
     "news.title": "Actualit\u00e9s",
     "news.pageTitle": "Actualit\u00e9s | HEC IA",
@@ -103,31 +72,12 @@ export const ui = {
     "news.category.ai": "IA",
     "news.category.industry": "Industrie",
     "news.category.academic": "Académique",
-
-    // Gallery page
-    "gallery.title": "Galerie",
-    "gallery.pageTitle": "Galerie | HEC IA",
-    "gallery.description":
-      "Photos et images de la vie de l'association HEC IA.",
-    "gallery.subtitle":
-      "Retour en images sur nos \u00e9v\u00e9nements, projets et moments forts de l'association.",
-    "gallery.noImages": "Aucune image pour le moment",
-    "gallery.noImagesSub":
-      "Revenez bient\u00f4t pour d\u00e9couvrir nos photos.",
-    "gallery.imageToAdd": "Image \u00e0 ajouter",
-    "gallery.category.\u00e9v\u00e9nements": "\u00c9v\u00e9nements",
-    "gallery.category.projets": "Projets",
-    "gallery.category.vie-associative": "Vie associative",
-    "gallery.category.autre": "Autre",
   },
   en: {
     // Navigation
     "nav.home": "Home",
     "nav.events": "Events",
-    "nav.projects": "Projects",
-    "nav.blog": "Blog",
     "nav.news": "News",
-    "nav.gallery": "Gallery",
     "nav.menu": "Menu",
 
     // Layout
@@ -141,7 +91,7 @@ export const ui = {
     "home.hero.subtitle":
       "We are the student association dedicated to democratizing, learning and applying AI in the business world.",
     "home.hero.cta.events": "Our Events",
-    "home.hero.cta.projects": "Discover our Projects",
+    "home.hero.cta.news": "Our News",
     "home.hero.suffix": "at",
 
     // Home - Bureau
@@ -156,10 +106,6 @@ export const ui = {
     // Home - Sections
     "home.events.title": "Upcoming Events",
     "home.events.seeAll": "See all",
-    "home.projects.title": "Featured Projects",
-    "home.projects.seeAll": "See all",
-    "home.blog.title": "Latest Articles",
-    "home.blog.seeAll": "See all",
     "home.news.title": "News",
     "home.news.seeAll": "See all",
     "home.join.title": "Join Us",
@@ -179,29 +125,6 @@ export const ui = {
     "events.online": "Online",
     "events.register": "Register for the event",
 
-    // Projects page
-    "projects.title": "Projects",
-    "projects.pageTitle": "Projects | HEC IA",
-    "projects.description": "Discover AI projects built by HEC IA members.",
-    "projects.subtitle":
-      "Discover the initiatives and technical projects built by our members.",
-    "projects.status.active": "Active",
-    "projects.status.completed": "Completed",
-    "projects.status.archived": "Archived",
-    "projects.startedOn": "Started on",
-    "projects.team": "Team",
-    "projects.sourceCode": "Source Code",
-    "projects.viewDemo": "View Demo",
-
-    // Blog page
-    "blog.title": "Blog",
-    "blog.pageTitle": "Blog | HEC IA",
-    "blog.description":
-      "Articles and insights on artificial intelligence by HEC IA members.",
-    "blog.subtitle":
-      "Articles, tutorials and insights on artificial intelligence by our community.",
-    "blog.by": "By",
-
     // News page
     "news.title": "News",
     "news.pageTitle": "News | HEC IA",
@@ -214,20 +137,6 @@ export const ui = {
     "news.category.ai": "AI",
     "news.category.industry": "Industry",
     "news.category.academic": "Academic",
-
-    // Gallery page
-    "gallery.title": "Gallery",
-    "gallery.pageTitle": "Gallery | HEC IA",
-    "gallery.description": "Photos and images from the life of HEC IA.",
-    "gallery.subtitle":
-      "A look back in pictures at our events, projects and highlights.",
-    "gallery.noImages": "No images yet",
-    "gallery.noImagesSub": "Come back soon to see our photos.",
-    "gallery.imageToAdd": "Image to add",
-    "gallery.category.\u00e9v\u00e9nements": "Events",
-    "gallery.category.projets": "Projects",
-    "gallery.category.vie-associative": "Community Life",
-    "gallery.category.autre": "Other",
   },
 } as const
 

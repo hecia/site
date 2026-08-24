@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import HeroTitle from "@/components/HeroTitle"
 import { getCollection } from "astro:content"
@@ -24,19 +24,6 @@ const localeEvents = filterByLocale(allEvents, lang)
 const upcomingEvents = localeEvents
   .filter(e => e.data.startDate > new Date())
   .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf())
-  .slice(0, 3)
-
-const allProjects = await getCollection("projects", ({ data }) => !data.draft)
-const localeProjects = filterByLocale(allProjects, lang)
-const featuredProjects = localeProjects
-  .filter(p => p.data.featured)
-  .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
-  .slice(0, 3)
-
-const allBlog = await getCollection("blog", ({ data }) => !data.draft)
-const localeBlog = filterByLocale(allBlog, lang)
-const recentBlog = localeBlog
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3)
 
 const allNews = await getCollection("news", ({ data }) => !data.draft)
@@ -68,7 +55,7 @@ const members = [
             <a href={translatePath("/events")}>{t("home.hero.cta.events")}</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto rounded-full px-8">
-            <a href={translatePath("/projects")}>{t("home.hero.cta.projects")}</a>
+            <a href={translatePath("/news")}>{t("home.hero.cta.news")}</a>
           </Button>
         </div>
       </div>
@@ -150,106 +137,31 @@ const members = [
     </section>
   )}
 
-  <!-- Projets -->
-  {featuredProjects.length > 0 && (
-    <section class="py-16 md:py-24 snap-start">
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-center justify-between mb-10">
-          <h2 class="text-3xl font-bold tracking-tight">{t("home.projects.title")}</h2>
-          <a href={translatePath("/projects")} class="text-sm font-medium text-primary hover:underline">
-            {t("home.projects.seeAll")} &rarr;
-          </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map(project => (
-            <Card className="flex flex-col h-full border-border/50 hover:border-accent-orange/50 transition-colors">
-              <CardHeader>
-                <div class="flex justify-between items-start mb-2">
-                  <Badge variant={project.data.status === 'active' ? 'default' : 'secondary'}>
-                    {project.data.status === "active"
-                      ? t("projects.status.active")
-                      : project.data.status === "completed"
-                        ? t("projects.status.completed")
-                        : t("projects.status.archived")}
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl line-clamp-2">
-                  <a
-                    href={`${translatePath("/projects")}/${getSlugFromId(project.id)}`}
-                    class="hover:text-accent-orange transition-colors"
-                  >
-                    {project.data.title}
-                  </a>
-                </CardTitle>
-                <CardDescription className="line-clamp-3">{project.data.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <div class="flex flex-wrap gap-2">
-                  {project.data.technologies.slice(0, 3).map(tech => (
-                    <Badge variant="outline" className="text-xs">{tech}</Badge>
-                  ))}
-                  {project.data.technologies.length > 3 && (
-                    <Badge variant="outline" className="text-xs">+{project.data.technologies.length - 3}</Badge>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Blog + News -->
+  <!-- Actualités -->
   <section class="py-16 md:py-24 bg-muted/30 snap-start">
     <div class="container mx-auto px-4 md:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <h2 class="text-2xl font-bold tracking-tight">{t("home.blog.title")}</h2>
-            <a href={translatePath("/blog")} class="text-sm font-medium text-primary hover:underline">
-              {t("home.blog.seeAll")} &rarr;
-            </a>
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="text-3xl font-bold tracking-tight">{t("home.news.title")}</h2>
+        <a href={translatePath("/news")} class="text-sm font-medium text-primary hover:underline">
+          {t("home.news.seeAll")} &rarr;
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentNews.map(item => (
+          <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
+            <div class="flex items-center gap-2">
+              <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
+                {tDynamic(lang, `news.category.${item.data.category}`)}
+              </Badge>
+              <span class="text-xs text-muted-foreground">
+                {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
+              </span>
+            </div>
+            <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
+              <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
+            </h3>
           </div>
-          <div class="space-y-6">
-            {recentBlog.map(post => (
-              <div class="group flex flex-col gap-2">
-                <p class="text-sm text-muted-foreground">
-                  {post.data.pubDate.toLocaleDateString(getDateLocale(lang), { year: 'numeric', month: 'long', day: 'numeric' })}
-                </p>
-                <h3 class="text-lg font-semibold leading-tight group-hover:text-primary transition-colors">
-                  <a href={`${translatePath("/blog")}/${getSlugFromId(post.id)}`}>{post.data.title}</a>
-                </h3>
-                <p class="text-sm text-muted-foreground line-clamp-2">{post.data.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <h2 class="text-2xl font-bold tracking-tight">{t("home.news.title")}</h2>
-            <a href={translatePath("/news")} class="text-sm font-medium text-primary hover:underline">
-              {t("home.news.seeAll")} &rarr;
-            </a>
-          </div>
-          <div class="space-y-6">
-            {recentNews.map(item => (
-              <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
-                <div class="flex items-center gap-2">
-                  <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
-                    {tDynamic(lang, `news.category.${item.data.category}`)}
-                  </Badge>
-                  <span class="text-xs text-muted-foreground">
-                    {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
-                  </span>
-                </div>
-                <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
-                  <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   </section>

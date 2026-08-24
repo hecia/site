@@ -17,10 +17,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ links: propLinks }) => {
   const links = propLinks || [
     { href: "/", label: "Accueil" },
     { href: "/events", label: "Événements" },
-    { href: "/projects", label: "Projets" },
-    { href: "/blog", label: "Blog" },
     { href: "/news", label: "Actualités" },
-    { href: "/gallery", label: "Galerie" },
   ]
   const [open, setOpen] = React.useState(false)
 
