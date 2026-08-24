@@ -1,7 +1,7 @@
 ---
 title: "Field notes: why using the LLM less improved our pipeline"
 summary: "Octave Dumont (VP HEC IA Intelligence) shares a field report from his internship at BNP Paribas CIB: moving from an all-LLM pipeline to a hybrid architecture took the F1 score from 0.51 to 0.93."
-pubDate: 2026-08-24
+pubDate: 2026-05-24
 source: "Octave Dumont, LinkedIn"
 category: "ai"
 tags: ["llm", "production", "field-notes", "bnp-paribas"]

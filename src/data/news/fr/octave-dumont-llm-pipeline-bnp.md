@@ -1,7 +1,7 @@
 ---
 title: "Retour d'expérience : pourquoi utiliser moins le LLM a amélioré notre pipeline"
 summary: "Octave Dumont (VP HEC IA Intelligence) partage un retour d'expérience de son stage chez BNP Paribas CIB : passer d'un pipeline tout-LLM à une architecture hybride a fait passer le F1 score de 0,51 à 0,93."
-pubDate: 2026-08-24
+pubDate: 2026-05-24
 source: "Octave Dumont, LinkedIn"
 category: "ai"
 tags: ["llm", "production", "retour-experience", "bnp-paribas"]
