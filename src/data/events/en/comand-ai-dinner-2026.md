@@ -6,11 +6,13 @@ location: "Ambassade d'Auvergne, 22 Rue du Grenier-Saint-Lazare, 75003 Paris"
 online: false
 tags: ["dinner", "comand-ai", "partnership"]
 image:
-  src: "/logos/comand-ai.png"
-  alt: "Comand AI logo"
+  src: "/events/comand-ai-dinner.jpg"
+  alt: "HEC IA x Comand AI - Dinner with Arnaud Valli"
 draft: false
 ---
 
-Dinner organized with Comand AI, with Arnaud Valli, part of HEC IA's partner dinner series.
+Dinner organized with Comand AI, with Arnaud Valli (former political advisor to NATO, 12-year reservist with the French Navy), part of HEC IA's partner dinner series.
+
+Comand AI raised a €32M Series A in June (Blossom Capital, Saab). Its platform, Prevail, is deployed with operational units in France, Germany and Ukraine. Small-group dinner format, Chatham House rule.
 
 Thanks to Comand AI and Arnaud Valli for the exchange.
