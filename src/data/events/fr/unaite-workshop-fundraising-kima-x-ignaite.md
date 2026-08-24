@@ -3,7 +3,7 @@ title: "HEC x Unaite : Workshop Fundraising | Kima x Ignaite"
 description: "HEC x Unaite : Workshop Fundraising | Kima x Ignaite"
 startDate: 2025-06-05T14:30:00
 endDate: 2025-06-05T16:00:00
-location: "Paris, Île-de-France"
+location: "Adresse exacte communiquée à l'inscription (Paris)"
 online: false
 registrationUrl: "https://luma.com/7vaqmo9x"
 tags: ["unaite"]
