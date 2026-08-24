@@ -148,18 +148,29 @@ const eventPartners = [
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {recentNews.map(item => (
-          <div class="group flex flex-col gap-2 border-l-2 border-border pl-4 hover:border-accent-yellow transition-colors">
-            <div class="flex items-center gap-2">
-              <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
-                {tDynamic(lang, `news.category.${item.data.category}`)}
-              </Badge>
-              <span class="text-xs text-muted-foreground">
-                {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
-              </span>
+          <div class="group flex flex-col gap-3 rounded-lg border border-border/50 overflow-hidden hover:border-accent-yellow/50 transition-colors bg-background/50">
+            {item.data.image && (
+              item.data.image.src.startsWith("/logos/") || item.data.image.src === "/logo.jpg" ? (
+                <div class="w-full h-28 bg-white flex items-center justify-center p-5">
+                  <img src={item.data.image.src} alt={item.data.image.alt} class="max-h-full max-w-full object-contain" />
+                </div>
+              ) : (
+                <img src={item.data.image.src} alt={item.data.image.alt} class="w-full h-28 object-cover" />
+              )
+            )}
+            <div class="flex flex-col gap-2 px-4 pb-4">
+              <div class="flex items-center gap-2">
+                <Badge variant="outline" className="text-[10px] uppercase tracking-wider">
+                  {tDynamic(lang, `news.category.${item.data.category}`)}
+                </Badge>
+                <span class="text-xs text-muted-foreground">
+                  {item.data.pubDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
+                </span>
+              </div>
+              <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
+                <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
+              </h3>
             </div>
-            <h3 class="text-base font-medium leading-tight group-hover:text-accent-yellow transition-colors">
-              <a href={`${translatePath("/news")}/${getSlugFromId(item.id)}`}>{item.data.title}</a>
-            </h3>
           </div>
         ))}
       </div>

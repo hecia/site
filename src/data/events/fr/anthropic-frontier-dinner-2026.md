@@ -13,4 +13,4 @@ draft: false
 
 Dîner organisé avec Anthropic, dans la continuité du cycle de dîners partenaires HEC IA consacrés à l'IA de frontière.
 
-HEC IA remercie Anthropic et ses membres organisateurs (Magloire) pour cet échange.
+Merci à Anthropic pour cet échange.

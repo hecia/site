@@ -13,4 +13,4 @@ draft: false
 
 Intervention d'OpenAI sur le campus HEC Paris.
 
-HEC IA remercie OpenAI et ses membres organisateurs (Pauline Zmiro, Magloire, Adrien Hajeri, Alban Poutier) pour cet événement.
+Merci à OpenAI pour cet événement.

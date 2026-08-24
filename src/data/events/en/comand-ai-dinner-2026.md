@@ -13,4 +13,4 @@ draft: false
 
 Dinner organized with Comand AI, with Arnaud Valli, part of HEC IA's partner dinner series.
 
-HEC IA thanks Comand AI, Arnaud Valli, and its organizing members (Magloire, Octave Dumont, Alban Poutier, Sara Hadjadj) for the exchange.
+Thanks to Comand AI and Arnaud Valli for the exchange.

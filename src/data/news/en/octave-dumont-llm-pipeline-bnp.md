@@ -5,6 +5,9 @@ pubDate: 2026-05-24
 source: "Octave Dumont, LinkedIn"
 category: "ai"
 tags: ["llm", "production", "field-notes", "bnp-paribas"]
+image:
+  src: "/logos/bnp-paribas.svg"
+  alt: "BNP Paribas logo"
 draft: false
 ---
 

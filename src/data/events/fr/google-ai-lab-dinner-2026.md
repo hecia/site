@@ -13,4 +13,4 @@ draft: false
 
 Dîner organisé avec Google, dans le cadre du cycle de dîners partenaires HEC IA, sur les laboratoires de recherche IA et le déploiement de modèles frontière.
 
-HEC IA remercie Google et ses membres organisateurs (Magloire, Sara Hadjadj, Camille Gaidier, Octave Dumont) pour cet échange.
+Merci à Google pour cet échange.

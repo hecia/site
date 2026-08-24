@@ -4,6 +4,9 @@ summary: "Colin Petit and Magloire T. Guillet (HEC IA) team up with Sean Lee (AI
 pubDate: 2026-08-24
 category: "association"
 tags: ["partnership", "wharton", "penn", "international"]
+image:
+  src: "/logos/wharton.png"
+  alt: "The Wharton School logo"
 draft: false
 ---
 

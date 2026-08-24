@@ -13,4 +13,4 @@ draft: false
 
 Hackathon organisé à San Francisco, en lien avec HEC Paris.
 
-HEC IA remercie ses membres organisateurs (Magloire, Pauline Zmiro) pour cet événement.
+Merci à tous les participants pour cet événement.

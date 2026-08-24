@@ -13,4 +13,4 @@ draft: false
 
 Dinner organized with Google, part of HEC IA's partner dinner series, on AI research labs and frontier model deployment.
 
-HEC IA thanks Google and its organizing members (Magloire, Sara Hadjadj, Camille Gaidier, Octave Dumont) for the exchange.
+Thanks to Google for the exchange.

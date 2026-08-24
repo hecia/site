@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/uan55g3p"
 category: "industry"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-unaite-x-perplexity.jpg"
+  alt: "Cover visual - Unaite x Perplexity"
 draft: false
 ---
 

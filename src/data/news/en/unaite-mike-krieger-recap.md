@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/hbxebi6c"
 category: "association"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-unaite-x-anthropic-fireside-chat-with-mike-krieger.jpg"
+  alt: "Cover visual - Mike Krieger fireside chat"
 draft: false
 ---
 

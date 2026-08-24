@@ -13,4 +13,4 @@ draft: false
 
 Dinner organized with Anthropic, part of HEC IA's ongoing partner dinner series on frontier AI.
 
-HEC IA thanks Anthropic and its organizing member (Magloire) for the exchange.
+Thanks to Anthropic for the exchange.

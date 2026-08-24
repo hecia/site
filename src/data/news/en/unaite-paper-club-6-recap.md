@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/8j1cd1qj"
 category: "ai"
 tags: ["unaite", "paper-club", "google-deepmind"]
+image:
+  src: "/events/unaite/unaite-paper-club-6-renu-singh-google-deepmind.jpg"
+  alt: "Cover visual - Paper Club #6"
 draft: false
 ---
 

@@ -13,4 +13,4 @@ draft: false
 
 Dîner organisé avec Comand AI, avec Arnaud Valli, dans le cadre du cycle de dîners partenaires HEC IA.
 
-HEC IA remercie Comand AI, Arnaud Valli, et ses membres organisateurs (Magloire, Octave Dumont, Alban Poutier, Sara Hadjadj) pour cet échange.
+Merci à Comand AI et à Arnaud Valli pour cet échange.

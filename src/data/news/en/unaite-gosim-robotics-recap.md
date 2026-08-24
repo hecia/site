@@ -6,6 +6,9 @@ source: "Unaite"
 sourceUrl: "https://luma.com/11cjioey"
 category: "association"
 tags: ["unaite"]
+image:
+  src: "/events/unaite/unaite-unaite-x-gosim-robotics-hackathon-station-f.jpg"
+  alt: "Cover visual - GOSIM x Unaite hackathon"
 draft: false
 ---
 

@@ -13,4 +13,4 @@ draft: false
 
 Cocktail organisé avec Palantir sur le métier de Forward Deployed Engineer (FDE) et son impact.
 
-HEC IA remercie Palantir et ses membres organisateurs (Magloire, Octave Dumont) pour cet échange.
+Merci à Palantir pour cet échange.

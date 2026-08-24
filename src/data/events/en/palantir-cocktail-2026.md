@@ -13,4 +13,4 @@ draft: false
 
 Cocktail organized with Palantir on the Forward Deployed Engineer (FDE) role and its impact.
 
-HEC IA thanks Palantir and its organizing members (Magloire, Octave Dumont) for the exchange.
+Thanks to Palantir for the exchange.
