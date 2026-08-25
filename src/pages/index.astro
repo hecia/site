@@ -25,6 +25,14 @@ const upcomingEvents = localeEvents
   .filter(e => e.data.startDate > new Date())
   .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf())
   .slice(0, 3)
+// Fallback: si rien n'est à venir au moment du build, on montre les derniers events passés
+// plutôt que de faire disparaître la section entière.
+const homeEvents = upcomingEvents.length > 0
+  ? upcomingEvents
+  : localeEvents
+      .filter(e => e.data.startDate <= new Date())
+      .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+      .slice(0, 3)
 
 const allNews = await getCollection("news", ({ data }) => !data.draft)
 const localeNews = filterByLocale(allNews, lang)
@@ -73,6 +81,55 @@ const eventPartners = [
     <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-cyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
   </section>
 
+  <!-- Événements -->
+  <section class="py-16 md:py-24 bg-muted/30 snap-start">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="text-3xl font-bold tracking-tight">
+          {upcomingEvents.length > 0 ? t("home.events.title") : t("home.events.titleRecent")}
+        </h2>
+        <a href={translatePath("/events")} class="text-sm font-medium text-primary hover:underline">
+          {t("home.events.seeAll")} &rarr;
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {homeEvents.map(event => (
+          <Card className="flex flex-col h-full border-border/50 bg-background/50 backdrop-blur-sm hover:border-primary/50 transition-colors overflow-hidden">
+            {event.data.image && (
+              event.data.image.src.startsWith("/logos/") || event.data.image.src === "/logo.jpg" ? (
+                <div class="w-full aspect-[4/3] bg-white flex items-center justify-center p-5">
+                  <img src={event.data.image.src} alt={event.data.image.alt} class="max-h-full max-w-full object-contain" />
+                </div>
+              ) : (
+                <img src={event.data.image.src} alt={event.data.image.alt} class="w-full aspect-[4/3] object-cover" />
+              )
+            )}
+            <CardHeader>
+              <div class="flex justify-between items-start gap-4 mb-2">
+                <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                  {event.data.startDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
+                </Badge>
+                {event.data.online && <Badge variant="outline">{t("events.online")}</Badge>}
+              </div>
+              <CardTitle className="text-xl line-clamp-2">
+                <a
+                  href={`${translatePath("/events")}/${getSlugFromId(event.id)}`}
+                  class="hover:text-primary transition-colors"
+                >
+                  {event.data.title}
+                </a>
+              </CardTitle>
+              <CardDescription className="line-clamp-2">{event.data.description}</CardDescription>
+            </CardHeader>
+            <CardFooter className="mt-auto pt-4 border-t border-border/50 text-sm text-muted-foreground">
+              <span class="truncate">{event.data.location}</span>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- Ils ont organisé un événement avec nous -->
   <section class="py-16 md:py-20 snap-start border-y border-border/40 bg-muted/20">
     <div class="container mx-auto px-4 md:px-8 mb-10 text-center">
@@ -99,55 +156,6 @@ const eventPartners = [
       </div>
     </div>
   </section>
-
-  <!-- Événements -->
-  {upcomingEvents.length > 0 && (
-    <section class="py-16 md:py-24 bg-muted/30 snap-start">
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-center justify-between mb-10">
-          <h2 class="text-3xl font-bold tracking-tight">{t("home.events.title")}</h2>
-          <a href={translatePath("/events")} class="text-sm font-medium text-primary hover:underline">
-            {t("home.events.seeAll")} &rarr;
-          </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {upcomingEvents.map(event => (
-            <Card className="flex flex-col h-full border-border/50 bg-background/50 backdrop-blur-sm hover:border-primary/50 transition-colors overflow-hidden">
-              {event.data.image && (
-                event.data.image.src.startsWith("/logos/") || event.data.image.src === "/logo.jpg" ? (
-                  <div class="w-full aspect-[4/3] bg-white flex items-center justify-center p-5">
-                    <img src={event.data.image.src} alt={event.data.image.alt} class="max-h-full max-w-full object-contain" />
-                  </div>
-                ) : (
-                  <img src={event.data.image.src} alt={event.data.image.alt} class="w-full aspect-[4/3] object-cover" />
-                )
-              )}
-              <CardHeader>
-                <div class="flex justify-between items-start gap-4 mb-2">
-                  <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
-                    {event.data.startDate.toLocaleDateString(getDateLocale(lang), { month: 'short', day: 'numeric' })}
-                  </Badge>
-                  {event.data.online && <Badge variant="outline">{t("events.online")}</Badge>}
-                </div>
-                <CardTitle className="text-xl line-clamp-2">
-                  <a
-                    href={`${translatePath("/events")}/${getSlugFromId(event.id)}`}
-                    class="hover:text-primary transition-colors"
-                  >
-                    {event.data.title}
-                  </a>
-                </CardTitle>
-                <CardDescription className="line-clamp-2">{event.data.description}</CardDescription>
-              </CardHeader>
-              <CardFooter className="mt-auto pt-4 border-t border-border/50 text-sm text-muted-foreground">
-                <span class="truncate">{event.data.location}</span>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
 
   <!-- Actualités -->
   <section class="py-16 md:py-24 bg-muted/30 snap-start">

@@ -31,6 +31,7 @@ export const ui = {
 
     // Home - Sections
     "home.events.title": "\u00c9v\u00e9nements \u00e0 venir",
+    "home.events.titleRecent": "Nos derniers \u00e9v\u00e9nements",
     "home.events.seeAll": "Voir tout",
     "home.news.title": "Actualit\u00e9s",
     "home.news.seeAll": "Voir tout",
@@ -112,6 +113,7 @@ export const ui = {
 
     // Home - Sections
     "home.events.title": "Upcoming Events",
+    "home.events.titleRecent": "Our latest events",
     "home.events.seeAll": "See all",
     "home.news.title": "News",
     "home.news.seeAll": "See all",
