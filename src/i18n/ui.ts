@@ -22,7 +22,7 @@ export const ui = {
     "layout.footer.rights": "Tous droits r\u00e9serv\u00e9s.",
 
     // Home - Hero
-    "home.title": "HEC IA - Accueil",
+    "home.title": "HEC IA Association - Accueil",
     "home.hero.subtitle":
       "Nous sommes l'association \u00e9tudiante d\u00e9di\u00e9e \u00e0 la d\u00e9mocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.",
     "home.hero.cta.events": "Nos \u00c9v\u00e9nements",
@@ -37,14 +37,14 @@ export const ui = {
     "home.news.seeAll": "Voir tout",
     "home.eventPartners.title": "Nos partenaires",
     "home.eventPartners.subtitle":
-      "Des entreprises qui ont pris part à un dîner, un talk ou un hackathon avec HEC IA.",
+      "Des entreprises qui ont pris part à un dîner, un talk ou un hackathon avec HEC IA Association.",
     "home.join.title": "Rejoignez-nous",
     "home.join.subtitle":
-      "Suivez nos activit\u00e9s et rejoignez la communaut\u00e9 HEC IA.",
+      "Suivez nos activit\u00e9s et rejoignez la communaut\u00e9 HEC IA Association.",
 
     // About page
     "about.title": "Qui sommes-nous",
-    "about.pageTitle": "Qui sommes-nous | HEC IA",
+    "about.pageTitle": "Qui sommes-nous | HEC IA Association",
     "about.description":
       "L'association étudiante de HEC Paris dédiée à l'intelligence artificielle, et les membres qui la font vivre.",
     "about.subtitle":
@@ -61,7 +61,7 @@ export const ui = {
 
     // Events page
     "events.title": "\u00c9v\u00e9nements",
-    "events.pageTitle": "\u00c9v\u00e9nements | HEC IA",
+    "events.pageTitle": "\u00c9v\u00e9nements | HEC IA Association",
     "events.description":
       "D\u00e9couvrez nos prochains \u00e9v\u00e9nements, ateliers et conf\u00e9rences sur l'IA.",
     "events.subtitle":
@@ -75,9 +75,9 @@ export const ui = {
 
     // News page
     "news.title": "Actualit\u00e9s",
-    "news.pageTitle": "Actualit\u00e9s | HEC IA",
+    "news.pageTitle": "Actualit\u00e9s | HEC IA Association",
     "news.description":
-      "Les derni\u00e8res actualit\u00e9s de l'association HEC IA et du monde de l'intelligence artificielle.",
+      "Les derni\u00e8res actualit\u00e9s de HEC IA Association et du monde de l'intelligence artificielle.",
     "news.subtitle":
       "Restez inform\u00e9 des derni\u00e8res nouvelles de l'association et de l'industrie.",
     "news.source": "Source :",
@@ -87,7 +87,7 @@ export const ui = {
     "news.category.academic": "Académique",
     "news.category.newsletter": "Newsletter",
     "news.newsletter.title": "Newsletter",
-    "news.newsletter.banner": "Voici notre newsletter publique. La version complète est envoyée par email aux membres HEC IA.",
+    "news.newsletter.banner": "Voici notre newsletter publique. La version complète est envoyée par email aux membres de HEC IA Association.",
   },
   en: {
     // Navigation
@@ -104,7 +104,7 @@ export const ui = {
     "layout.footer.rights": "All rights reserved.",
 
     // Home - Hero
-    "home.title": "HEC IA - Home",
+    "home.title": "HEC IA Association - Home",
     "home.hero.subtitle":
       "We are the student association dedicated to democratizing, learning and applying AI in the business world.",
     "home.hero.cta.events": "Our Events",
@@ -119,14 +119,14 @@ export const ui = {
     "home.news.seeAll": "See all",
     "home.eventPartners.title": "Our partners",
     "home.eventPartners.subtitle":
-      "Companies that have taken part in a dinner, talk or hackathon with HEC IA.",
+      "Companies that have taken part in a dinner, talk or hackathon with HEC IA Association.",
     "home.join.title": "Join Us",
     "home.join.subtitle":
-      "Follow our activities and join the HEC IA community.",
+      "Follow our activities and join the HEC IA Association community.",
 
     // About page
     "about.title": "About us",
-    "about.pageTitle": "About us | HEC IA",
+    "about.pageTitle": "About us | HEC IA Association",
     "about.description":
       "The HEC Paris student association dedicated to artificial intelligence, and the members who bring it to life.",
     "about.subtitle":
@@ -143,7 +143,7 @@ export const ui = {
 
     // Events page
     "events.title": "Events",
-    "events.pageTitle": "Events | HEC IA",
+    "events.pageTitle": "Events | HEC IA Association",
     "events.description":
       "Discover our upcoming events, workshops and conferences on AI.",
     "events.subtitle":
@@ -156,9 +156,9 @@ export const ui = {
 
     // News page
     "news.title": "News",
-    "news.pageTitle": "News | HEC IA",
+    "news.pageTitle": "News | HEC IA Association",
     "news.description":
-      "The latest news from HEC IA and the world of artificial intelligence.",
+      "The latest news from HEC IA Association and the world of artificial intelligence.",
     "news.subtitle":
       "Stay informed about the latest news from the association and the industry.",
     "news.source": "Source:",
@@ -168,7 +168,7 @@ export const ui = {
     "news.category.academic": "Academic",
     "news.category.newsletter": "Newsletter",
     "news.newsletter.title": "Newsletter",
-    "news.newsletter.banner": "This is our public newsletter. The full version is sent by email to HEC IA members.",
+    "news.newsletter.banner": "This is our public newsletter. The full version is sent by email to HEC IA Association members.",
   },
 } as const
 
