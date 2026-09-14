@@ -16,6 +16,17 @@ const members = [
   { name: "Pauline Zmiro", roleKey: "bureau.role.treasurer", initials: "SB", image: "/members/pauline-zmiro.jpeg", linkedin: "https://www.linkedin.com/in/pauline-zmiro/" },
   { name: "Octave Dumont", roleKey: "bureau.role.vicePresident", initials: "OD", image: "/members/octave-dumont.jpeg", linkedin: "https://www.linkedin.com/in/octave-dumont/" },
 ]
+
+const bureauNext = [
+  { name: "Roxanne Midorge", role: "Co-President", initials: "RM" },
+  { name: "Joseph Benarroch", role: "Co-President", initials: "JB" },
+  { name: "Sara Hadjadj", role: "Treasurer / VP Revenue & Events", initials: "SH" },
+  { name: "Noa Nebot", role: "VP Institutional Relations", initials: "NN" },
+  { name: "Hugo Roullet", role: "VP Deployment AI Intelligence", initials: "HR" },
+  { name: "Thomas Brunel", role: "VP Research", initials: "TB" },
+  { name: "Abdou-Ismaël Sy", role: "Head of SF Project", initials: "AS" },
+  { name: "Camille Gaidier", role: "Head of HEC AI Diners", initials: "CG" },
+]
 ---
 
 <Layout title={t("about.pageTitle")} description={t("about.description")}>
@@ -58,11 +69,23 @@ const members = [
     </section>
 
     <section id="bureau-next" class="mt-20">
-      <div class="text-center mb-8">
+      <div class="text-center mb-12">
         <h2 class="text-3xl font-bold tracking-tight mb-4">{t("about.bureauNext.title")}</h2>
-        <span class="inline-block px-4 py-1.5 rounded-full border border-border text-sm font-medium text-muted-foreground">
-          {t("about.bureauNext.comingSoon")}
-        </span>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        {bureauNext.map(member => (
+          <div class="flex flex-col items-center text-center gap-4">
+            <div class="relative group">
+              <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-primary/10 border-2 border-border overflow-hidden flex items-center justify-center">
+                <span class="text-3xl font-bold text-primary">{member.initials}</span>
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold text-base leading-tight">{member.name}</p>
+              <p class="text-sm text-muted-foreground mt-1">{member.role}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   </div>
