@@ -49,15 +49,9 @@ export const ui = {
       "L'association étudiante de HEC Paris dédiée à l'intelligence artificielle, et les membres qui la font vivre.",
     "about.subtitle":
       "L'association étudiante de HEC Paris dédiée à la démocratisation, l'apprentissage et l'application de l'IA dans le monde des affaires.",
-    "about.bureau.title": "Bureau 2025-2026",
+    "about.bureau.title": "Bureau 2026-2027",
     "about.bureau.subtitle":
       "Les membres qui font vivre l'association au quotidien.",
-    "about.bureauNext.title": "Bureau 2026-2027",
-    "about.bureauNext.comingSoon": "Coming soon",
-    "bureau.role.coPresident": "Co-Président",
-    "bureau.role.secretaryGeneral": "Secrétaire Général",
-    "bureau.role.treasurer": "Trésorière",
-    "bureau.role.vicePresident": "Vice-Président : HEC IA Intelligence",
 
     // Events page
     "events.title": "\u00c9v\u00e9nements",
@@ -131,15 +125,9 @@ export const ui = {
       "The HEC Paris student association dedicated to artificial intelligence, and the members who bring it to life.",
     "about.subtitle":
       "The HEC Paris student association dedicated to democratizing, learning and applying AI in the business world.",
-    "about.bureau.title": "Board 2025-2026",
+    "about.bureau.title": "Board 2026-2027",
     "about.bureau.subtitle":
       "The members who bring the association to life every day.",
-    "about.bureauNext.title": "Board 2026-2027",
-    "about.bureauNext.comingSoon": "Coming soon",
-    "bureau.role.coPresident": "Co-President",
-    "bureau.role.secretaryGeneral": "Secretary General",
-    "bureau.role.treasurer": "Treasurer",
-    "bureau.role.vicePresident": "Vice-President: HEC IA Intelligence",
 
     // Events page
     "events.title": "Events",
