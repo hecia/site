@@ -1,6 +1,6 @@
 ---
 title: "Hugo Roullet à l'IPEM pour entrevoir les effets de l'IA sur le capital-investissement"
-summary: "La rumeur du campus dit que les stages en finance sont en train de disparaître. Réponse obtenue en posant la question directement aux fonds qui recrutent, à l'IPEM Global."
+summary: "Sur le campus, la rumeur est bien installée. Les étudiants se la transmettent comme une légende urbaine : les stages en finance, c'est fini, les fonds ne recrutent plus, un modèle LBO se construit maintenant en huit secondes, et nous finirons tous en reconversion dans la céramique artisanale."
 pubDate: 2026-09-16
 category: "association"
 tags: ["ipem", "private-equity", "ia", "stage", "chronique"]
@@ -10,8 +10,6 @@ image:
 draft: false
 featured: true
 ---
-
-Sur le campus, la rumeur est bien installée. Les étudiants se la transmettent comme une légende urbaine : les stages en finance, c'est fini, les fonds ne recrutent plus, un modèle LBO se construit maintenant en huit secondes, et nous finirons tous en reconversion dans la céramique artisanale.
 
 Merci à Antoine Colson de m'avoir invité à l'IPEM Global. 6 200 participants, dont 1 550 LPs qui annoncent plus de 100 Md$ à allouer dans les douze prochains mois. Le format reste resserré, et c'est ce qui fait la valeur de l'événement. Il n'a pas d'équivalent en Europe. Une seule chose à redire, la file d'attente pour le café. Mais je la crois volontaire : c'est là que j'ai eu mes meilleures conversations.
 
