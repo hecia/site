@@ -1,6 +1,6 @@
 ---
-title: "Good news: AI is not taking your job. Bad news: you still have to earn it."
-summary: "A day at IPEM Global asking funds directly: are finance internships really disappearing? What is changing, what is not, and the one question nobody could answer."
+title: "Hugo Roullet at IPEM to glimpse how AI is reshaping private equity"
+summary: "The campus rumor says finance internships are disappearing. Answer obtained by asking hiring funds directly, at IPEM Global."
 pubDate: 2026-09-16
 category: "association"
 tags: ["ipem", "private-equity", "ai", "internship", "chronicle"]
@@ -10,6 +10,8 @@ image:
 draft: false
 featured: true
 ---
+
+**Good news: AI is not taking your job. Bad news: you still have to earn it.**
 
 On campus, the rumor is well established. Students pass it on like an urban legend: finance internships are over, funds have stopped hiring, an LBO model now gets built in eight seconds, and we'll all end up retraining in artisanal pottery.
 
