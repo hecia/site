@@ -1,6 +1,6 @@
 ---
-title: "Bonne nouvelle : l'IA ne supprime pas votre poste. Mauvaise nouvelle : il faut quand même le mériter."
-summary: "Une journée à l'IPEM Global à poser directement la question aux fonds : les stages en finance sont-ils en train de disparaître ? Ce qui change, ce qui ne change pas, et la question à laquelle personne n'a de réponse."
+title: "Une journée à l'IPEM pour entrevoir les effets de l'IA sur le capital-investissement"
+summary: "La rumeur du campus dit que les stages en finance sont en train de disparaître. Réponse obtenue en posant la question directement aux fonds qui recrutent, à l'IPEM Global."
 pubDate: 2026-09-16
 category: "association"
 tags: ["ipem", "private-equity", "ia", "stage", "chronique"]
@@ -10,6 +10,8 @@ image:
 draft: false
 featured: true
 ---
+
+**Bonne nouvelle : l'IA ne supprime pas votre poste. Mauvaise nouvelle : il faut quand même le mériter.**
 
 Sur le campus, la rumeur est bien installée. Les étudiants se la transmettent comme une légende urbaine : les stages en finance, c'est fini, les fonds ne recrutent plus, un modèle LBO se construit maintenant en huit secondes, et nous finirons tous en reconversion dans la céramique artisanale.
 
