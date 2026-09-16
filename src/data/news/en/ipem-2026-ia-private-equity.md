@@ -1,6 +1,6 @@
 ---
 title: "Hugo Roullet at IPEM to glimpse how AI is reshaping private equity"
-summary: "The campus rumor says finance internships are disappearing. Answer obtained by asking hiring funds directly, at IPEM Global."
+summary: "On campus, the rumor is well established. Students pass it on like an urban legend: finance internships are over, funds have stopped hiring, an LBO model now gets built in eight seconds, and we'll all end up retraining in artisanal pottery."
 pubDate: 2026-09-16
 category: "association"
 tags: ["ipem", "private-equity", "ai", "internship", "chronicle"]
@@ -10,8 +10,6 @@ image:
 draft: false
 featured: true
 ---
-
-On campus, the rumor is well established. Students pass it on like an urban legend: finance internships are over, funds have stopped hiring, an LBO model now gets built in eight seconds, and we'll all end up retraining in artisanal pottery.
 
 Thanks to Antoine Colson for inviting me to IPEM Global. 6,200 attendees, including 1,550 LPs announcing more than $100bn to allocate over the next twelve months. The format stays tight, and that is what makes the event valuable. There is nothing quite like it in Europe. One thing to complain about: the coffee queue. But I think it's deliberate — that's where I had my best conversations.
 
