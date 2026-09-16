@@ -1,5 +1,5 @@
 ---
-title: "Une journée à l'IPEM pour entrevoir les effets de l'IA sur le capital-investissement"
+title: "Hugo Roullet à l'IPEM pour entrevoir les effets de l'IA sur le capital-investissement"
 summary: "La rumeur du campus dit que les stages en finance sont en train de disparaître. Réponse obtenue en posant la question directement aux fonds qui recrutent, à l'IPEM Global."
 pubDate: 2026-09-16
 category: "association"

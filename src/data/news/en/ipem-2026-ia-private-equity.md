@@ -1,5 +1,5 @@
 ---
-title: "A day at IPEM to glimpse how AI is reshaping private equity"
+title: "Hugo Roullet at IPEM to glimpse how AI is reshaping private equity"
 summary: "The campus rumor says finance internships are disappearing. Answer obtained by asking hiring funds directly, at IPEM Global."
 pubDate: 2026-09-16
 category: "association"
