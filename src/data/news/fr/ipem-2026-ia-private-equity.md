@@ -11,15 +11,13 @@ draft: false
 featured: true
 ---
 
-**Bonne nouvelle : l'IA ne supprime pas votre poste. Mauvaise nouvelle : il faut quand même le mériter.**
-
 Sur le campus, la rumeur est bien installée. Les étudiants se la transmettent comme une légende urbaine : les stages en finance, c'est fini, les fonds ne recrutent plus, un modèle LBO se construit maintenant en huit secondes, et nous finirons tous en reconversion dans la céramique artisanale.
 
 Merci à Antoine Colson de m'avoir invité à l'IPEM Global. 6 200 participants, dont 1 550 LPs qui annoncent plus de 100 Md$ à allouer dans les douze prochains mois. Le format reste resserré, et c'est ce qui fait la valeur de l'événement. Il n'a pas d'équivalent en Europe. Une seule chose à redire, la file d'attente pour le café. Mais je la crois volontaire : c'est là que j'ai eu mes meilleures conversations.
 
 J'y ai passé la journée à poser la question à ceux qui recrutent. Parce que « l'IA va-t-elle remplacer les analystes » fait un bon titre, mais ne sert à rien.
 
-La vraie question tient en deux temps. Si la machine fait ce qu'on confiait à un junior, que reste-t-il à faire à un junior ? Et comment devient-on associé dans quinze ans, sans avoir passé les heures qui fabriquaient le jugement ?
+La vraie question tient en deux temps. **Si la machine fait ce qu'on confiait à un junior, que reste-t-il à faire à un junior ? Et comment devient-on associé dans quinze ans, sans avoir passé les heures qui fabriquaient le jugement ?**
 
 ## Partie 1. Trois familles de fonds
 
@@ -39,7 +37,7 @@ C'est là que la rumeur du campus s'effondre. La phrase que j'ai le plus entendu
 
 > « Je cherche presque les mêmes profils. »
 
-Notez le « presque ». Il fait tout le travail.
+**Notez le « presque ». Il fait tout le travail.**
 
 Les mêmes, d'abord. Pas d'ingénieurs, pas de prompt engineers, pas de profil hybride à la mode. Personne ne m'a dit chercher autre chose qu'un bon analyste. Vous pouvez ranger la reconversion dans la céramique.
 
@@ -49,7 +47,7 @@ Avant, un stagiaire passait six mois à apprendre à produire. Aujourd'hui, prod
 
 Le profil qui monte n'est donc pas celui qui sait faire. C'est celui qui itère, qui doute de ce qu'il vient de produire, et qui monte en compétence plus vite parce qu'il a arrêté de perdre trois jours sur la mise en forme.
 
-Reste la vraie question. Si les juniors ne passent plus ces heures-là, comment fabrique-t-on les associés de 2040 ? Un associé, c'est quelqu'un qui a construit trois cents modèles et qui sent, en regardant un business plan, que quelque chose cloche, sans pouvoir dire tout de suite quoi. Cette intuition s'achète en heures. Si on supprime les heures, on supprime l'intuition.
+Reste la vraie question. Si les juniors ne passent plus ces heures-là, comment fabrique-t-on les associés de 2040 ? Un associé, c'est quelqu'un qui a construit trois cents modèles et qui sent, en regardant un business plan, que quelque chose cloche, sans pouvoir dire tout de suite quoi. **Cette intuition s'achète en heures. Si on supprime les heures, on supprime l'intuition.**
 
 Je n'ai pas eu de réponse claire. Ce qui revient : le métier d'associé va lui aussi changer de forme, donc l'enjeu n'est pas de reproduire le parcours d'avant. Et plusieurs m'ont dit que c'était une bonne période pour arriver, parce que ceux qui entrent maintenant vont participer à écrire ce que devient le poste.
 
@@ -59,7 +57,7 @@ Ce métier consiste à convaincre un institutionnel de vous confier de l'argent 
 
 C'est un métier d'expérience, au sens propre : des dossiers vus, des rendez-vous, un réseau, des erreurs. Ça ne se télécharge pas.
 
-Alors non, les stages en finance ne sont pas morts. Le métier change de forme, et c'est plutôt une bonne nouvelle : il y a rarement eu autant de sujets ouverts pour quelqu'un qui arrive.
+**Alors non, les stages en finance ne sont pas morts.** Le métier change de forme, et c'est plutôt une bonne nouvelle : il y a rarement eu autant de sujets ouverts pour quelqu'un qui arrive.
 
 En revanche, la file d'attente du café restera un problème humain.
 
