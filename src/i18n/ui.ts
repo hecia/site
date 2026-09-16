@@ -75,6 +75,7 @@ export const ui = {
     "news.subtitle":
       "Restez inform\u00e9 des derni\u00e8res nouvelles de l'association et de l'industrie.",
     "news.source": "Source :",
+    "news.featured": "À la une",
     "news.category.association": "Association",
     "news.category.ai": "IA",
     "news.category.industry": "Industrie",
@@ -150,6 +151,7 @@ export const ui = {
     "news.subtitle":
       "Stay informed about the latest news from the association and the industry.",
     "news.source": "Source:",
+    "news.featured": "Featured",
     "news.category.association": "Association",
     "news.category.ai": "AI",
     "news.category.industry": "Industry",
